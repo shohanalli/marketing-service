@@ -1,0 +1,100 @@
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .service-card:hover .service-icon {
+        transform: translateY(-4px);
+      }
+
+      /* Premium glass */
+      .glass-effect {
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        background: rgba(255, 255, 255, 0.72);
+      }
+
+      /* Mobile menu animation */
+      .menu-panel {
+        transform: translateY(-8px);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 200ms ease;
+      }
+      .menu-panel.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+
+      
+/* Smooth edge fade mask */
+.marquee-mask{
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+}
+
+/* Track animation */
+.marquee-track{
+  animation: marquee 18s linear infinite;
+  will-change: transform;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .marquee-track{ animation: none; }
+}
+
+/* Infinite scrolling */
+@keyframes marquee{
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Responsive logo sizing (all devices) */
+.marquee-logo{
+  height: 39px;             /* mobile */
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  opacity: .85;
+  transition: transform .25s ease, opacity .25s ease;
+}
+
+.marquee-logo:hover{
+  opacity: 1;
+  transform: scale(1.06);
+}
+
+/* tablet */
+@media (min-width: 640px){
+  .marquee-logo{ height: 38px; max-width: 170px; }
+}
+
+/* desktop */
+@media (min-width: 1024px){
+  .marquee-logo{ height: 48px; max-width: 200px; }
+}
+
+
+
+      /* Subtle grain */
+      .grain:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.08'/%3E%3C/svg%3E");
+        opacity: 0.55;
+        mix-blend-mode: soft-light;
+        pointer-events: none;
+      }
+
+      /* Swiper tweaks */
+      .swiper {
+        width: 100%;
+      }
+      .swiper-pagination-bullet {
+        opacity: 0.25;
+      }
+      .swiper-pagination-bullet-active {
+        opacity: 1;
+      }

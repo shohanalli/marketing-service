@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>INFIXX | Professional Data Services</title>
+    <meta
+      content="High-end digital services tailored for industry leaders. Streamline your workflow with our expert document and data solutions."
+      name="description"
+    />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/global.js"></script>
+  </head>
+
+  <body class="bg-background-light text-primary font-display antialiased">
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 h-full border-b border-line glass-effect">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+      <!-- Logo (Responsive) -->
+      <a href="#" class="flex items-center shrink-0">
+        <img
+          src="image/Untitled design.png"
+          alt="INFIXX Logo"
+          class="h-8 sm:h-10 md:h-12 lg:h-14 w-auto max-w-[160px] sm:max-w-[200px] object-contain"
+        />
+      </a>
+
+          <!-- Navigation (Desktop) -->
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              class="text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+              href="#"
+              >Home</a
+            >
+            <div class="relative group">
+              <button
+                class="flex items-center gap-1 text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+                type="button"
+              >
+                Services
+                <span class="material-symbols-outlined text-sm">expand_more</span>
+              </button>
+              <!-- Dropdown -->
+              <div
+                class="absolute top-full left-0 w-64 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
+              >
+                <div
+                  class="bg-white border border-line rounded-2xl shadow-soft p-3 grid gap-1"
+                >
+                  <a
+                    class="p-2.5 hover:bg-primary/5 rounded-xl text-sm font-medium"
+                    href="#services"
+                    >Data Management</a
+                  >
+                  <a
+                    class="p-2.5 hover:bg-primary/5 rounded-xl text-sm font-medium"
+                    href="#services"
+                    >Digital Marketing</a
+                  >
+                  <a
+                    class="p-2.5 hover:bg-primary/5 rounded-xl text-sm font-medium"
+                    href="#services"
+                    >Creative Solutions</a
+                  >
+                </div>
+              </div>
+            </div>
+            <a
+              class="text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+              href="#how-it-works"
+              >Process</a
+            >
+            <a
+              class="text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+              href="#faq"
+              >FAQ</a
+            >
+          </nav>
+
+          <!-- CTA + Mobile Menu Button -->
+          <div class="flex items-center gap-3">
+            <button
+              class="hidden md:flex items-center justify-center rounded-xl h-10 px-5 bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-all shadow-soft"
+            >
+              Contact Us
+            </button>
+
+            <button
+              id="mobileMenuBtn"
+              class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-line bg-white hover:bg-primary/5 transition"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobileMenuPanel"
+            >
+              <span class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+         
+        <div
+          id="mobileMenuPanel"
+          class="menu-panel hidden md:hidden pb-5"
+          role="dialog"
+          aria-label="Mobile Menu"
+        >
+        
+          <div class="bg-white border border-line rounded-2xl shadow-soft p-3">
+            <div class="flex items-center justify-between px-1 pb-2">
+  <span class="text-sm font-bold text-ink/80">Menu</span>
+
+  <button
+    type="button"
+    class="inline-flex items-center justify-center w-10 h-10 rounded-xl border border-line hover:bg-primary/5 transition"
+    aria-label="Close menu"
+    data-menu-close
+  >
+    <span class="material-symbols-outlined text-2xl">close</span>
+  </button>
+</div>
+
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="#"
+              >Home</a
+            >
+
+            <div class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5">
+              Services
+            </div>
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="#services"
+              >Data Management</a
+            >
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="#services"
+              >Digital Marketing</a
+            >
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="#services"
+              >Creative Solutions</a
+            >
+
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="#how-it-works"
+              >Process</a
+            >
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="#faq"
+              >FAQ</a
+            >
+
+            <div class="pt-2">
+              <button
+                class="w-full h-11 rounded-xl bg-primary text-white font-bold text-sm hover:bg-primary/90 transition shadow-soft"
+              >
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section (Responsive + Premium) -->
+      <section class="relative overflow-hidden bg-white">
+        <div class="absolute inset-0 grain"></div>
+
+        <div
+          class="absolute -top-24 -right-24 w-[28rem] h-[28rem] rounded-full bg-primary/10 blur-3xl"
+        ></div>
+        <div
+          class="absolute -bottom-28 -left-28 w-[32rem] h-[32rem] rounded-full bg-primary/5 blur-3xl"
+        ></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-16 lg:py-28">
+          <div class="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+            <div class="max-w-2xl">
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 text-ink text-xs font-bold uppercase tracking-widest mb-6 ring-1 ring-black/5"
+              >
+                <span class="relative flex h-2 w-2">
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"
+                  ></span>
+                  <span
+                    class="relative inline-flex rounded-full h-2 w-2 bg-primary"
+                  ></span>
+                </span>
+                Premium Business Solutions
+              </div>
+
+              <!-- Two-color H1 (text unchanged, only spans) -->
+              <h1
+                class="text-[2.4rem] sm:text-5xl lg:text-6xl xl:text-7xl font-black leading-[1.07] tracking-tight mb-5"
+              >
+                <span class="text-ink">Precision Document Transformation</span>
+                <span class="text-primary/70">&amp; Data Management Scale</span>
+              </h1>
+
+              <p class="text-base sm:text-lg text-soft-ink leading-relaxed mb-8 max-w-xl">
+                High-end digital services tailored for industry leaders. Streamline your workflow with our expert document and data solutions designed for modern enterprise speed.
+              </p>
+
+              <!-- Responsive Buttons -->
+              <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                <button
+                  class="w-full sm:w-auto px-8 py-4 bg-primary text-white font-bold rounded-xl hover:shadow-glow hover:-translate-y-0.5 transition-all ring-1 ring-black/5"
+                >
+                  Get a Quote
+                </button>
+                <button
+                  class="w-full sm:w-auto px-8 py-4 bg-white border border-line text-ink font-bold rounded-xl hover:bg-primary/5 transition-all"
+                >
+                  Explore Services
+                </button>
+              </div>
+
+              <div class="mt-10 flex flex-wrap items-center gap-3 text-xs text-primary/60">
+                <div class="inline-flex items-center gap-2 bg-background-light rounded-full px-3 py-1 ring-1 ring-black/5">
+                  <span class="material-symbols-outlined text-sm">security</span>
+                  <span class="font-semibold">Enterprise-grade workflow</span>
+                </div>
+                <div class="inline-flex items-center gap-2 bg-background-light rounded-full px-3 py-1 ring-1 ring-black/5">
+                  <span class="material-symbols-outlined text-sm">bolt</span>
+                  <span class="font-semibold">Fast turnaround</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image card now responsive (shows on mobile too) -->
+            <div class="relative">
+              <div
+                class="aspect-[4/3] sm:aspect-[16/10] lg:aspect-square bg-primary/5 rounded-3xl overflow-hidden shadow-glow transform lg:rotate-2 hover:rotate-0 transition-transform duration-500 ring-1 ring-black/5"
+              >
+                <div
+                  class="w-full h-full bg-cover bg-center"
+                  data-alt="Modern office workspace with high-tech equipment"
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDutFnYGAPVQeTjlfaeHApZV_p9FKTyJi68ptdqhl7KuVUCKRfW2W_8i8mcwfFuvo4ThGrzRNgsIJgg3tYATeMJVGLKgEQLp06QnJiFem7NX4JqBFbNb0E9T75gROql-xza-WDWuGrEgl6S7tBxgsvpbI-2koXGLWe8Li5kYWtY28IOqmzIIuB8a2vZ_1eqU2RJ_8oIJgmlEv3b-KVVePo6JlW-8YHVqfZSXXY6WdPPM9iEXDSjtR1lUyo3neI78IHHTYs0XlPDcSKM')"
+                ></div>
+              </div>
+
+              <div
+                class="absolute -bottom-5 sm:-bottom-6 left-4 sm:left-6 bg-white/90 p-5 rounded-2xl shadow-soft max-w-xs border border-line backdrop-blur"
+              >
+                <div class="flex gap-4 items-center">
+                  <div class="bg-green-100 text-green-600 p-2 rounded-xl ring-1 ring-black/5">
+                    <span class="material-symbols-outlined">verified</span>
+                  </div>
+                  <div>
+                    <p class="font-extrabold text-ink">99.9% Accuracy</p>
+                    <p class="text-xs text-primary/60">
+                      Guaranteed quality control for every project.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- Trusted By Section (Responsive Marquee) -->
+<section class="py-10 bg-background-light border-y border-primary/5">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-center text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-primary/40 mb-8">
+      Trusted by Industry Leaders
+    </p>
+
+    <!-- Marquee Wrapper -->
+    <div class="relative overflow-hidden marquee-mask">
+      <!-- Track -->
+      <div class="flex w-max marquee-track hover:[animation-play-state:paused]">
+        
+        <!-- Group 1 -->
+        <div class="flex items-center gap-8 sm:gap-12 lg:gap-16 pr-8 sm:pr-12 lg:pr-16">
+          <img src="image/logo.png" alt="ACME" class="marquee-logo" />
+          <img src="image/logo.png" alt="GlobalTech" class="marquee-logo" />
+          <img src="image/logo.png" alt="DataFlow" class="marquee-logo" />
+          <img src="image/logo.png" alt="DataFlow" class="marquee-logo" />
+          <img src="image/logo.png" alt="DataFlow" class="marquee-logo" />
+
+        </div>
+
+        <!-- Group 2 (duplicate) -->
+        <div class="flex items-center gap-8 sm:gap-12 lg:gap-16 pr-8 sm:pr-12 lg:pr-16" aria-hidden="true">
+          <img src="image/logo.png" alt="" class="marquee-logo opacity-80" />
+          <img src="image/logo.png" alt="" class="marquee-logo opacity-80" />
+          <img src="image/logo.png" alt="" class="marquee-logo opacity-80" />
+          <img src="image/logo.png" alt="" class="marquee-logo opacity-80" />
+          <img src="image/logo.png" alt="" class="marquee-logo opacity-80" />
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+      <!-- Services Grid (UNCHANGED as you requested) -->
+      <section class="py-24 bg-white" id="services">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl lg:text-4xl font-black text-primary mb-4 tracking-tight">
+              Our Core Services
+            </h2>
+            <p class="text-primary/60">
+              Scalable, precision-driven solutions for your most demanding data and documentation needs.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Service 1 -->
+            <div class="service-card p-8 bg-background-light rounded-2xl border border-transparent hover:border-primary/10 hover:bg-white hover:shadow-xl transition-all group">
+              <div class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform">
+                <span class="material-symbols-outlined">keyboard</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Manual Typing</h3>
+              <p class="text-sm text-primary/60 mb-6 leading-relaxed">Fast, accurate transcription of handwritten or printed documents into digital formats.</p>
+              <a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary hover:gap-3 gap-2 transition-all" href="#">
+                Request Quote <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card p-8 bg-background-light rounded-2xl border border-transparent hover:border-primary/10 hover:bg-white hover:shadow-xl transition-all group">
+              <div class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform">
+                <span class="material-symbols-outlined">sync_alt</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">File Conversion</h3>
+              <p class="text-sm text-primary/60 mb-6 leading-relaxed">Seamlessly transform files between formats (PDF, Excel, XML, JSON) without data loss.</p>
+              <a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary hover:gap-3 gap-2 transition-all" href="#">
+                Request Quote <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card p-8 bg-background-light rounded-2xl border border-transparent hover:border-primary/10 hover:bg-white hover:shadow-xl transition-all group">
+              <div class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform">
+                <span class="material-symbols-outlined">database</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Data Entry</h3>
+              <p class="text-sm text-primary/60 mb-6 leading-relaxed">Accurate data management for inventory, records, and administrative databases.</p>
+              <a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary hover:gap-3 gap-2 transition-all" href="#">
+                Request Quote <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card p-8 bg-background-light rounded-2xl border border-transparent hover:border-primary/10 hover:bg-white hover:shadow-xl transition-all group">
+              <div class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform">
+                <span class="material-symbols-outlined">audio_file</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Transcription</h3>
+              <p class="text-sm text-primary/60 mb-6 leading-relaxed">High-fidelity audio-to-text conversion for legal, medical, and corporate meetings.</p>
+              <a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary hover:gap-3 gap-2 transition-all" href="#">
+                Request Quote <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-card p-8 bg-background-light rounded-2xl border border-transparent hover:border-primary/10 hover:bg-white hover:shadow-xl transition-all group">
+              <div class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform">
+                <span class="material-symbols-outlined">translate</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Translation</h3>
+              <p class="text-sm text-primary/60 mb-6 leading-relaxed">Multi-lingual document translation with cultural nuance and technical accuracy.</p>
+              <a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary hover:gap-3 gap-2 transition-all" href="#">
+                Request Quote <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-card p-8 bg-background-light rounded-2xl border border-transparent hover:border-primary/10 hover:bg-white hover:shadow-xl transition-all group">
+              <div class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform">
+                <span class="material-symbols-outlined">person_add</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Lead Generation</h3>
+              <p class="text-sm text-primary/60 mb-6 leading-relaxed">Curated B2B lead lists targeting your ideal customer profile with validated data.</p>
+              <a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary hover:gap-3 gap-2 transition-all" href="#">
+                Request Quote <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+
+            <!-- Service 7 -->
+            <div class="service-card p-8 bg-background-light rounded-2xl border border-transparent hover:border-primary/10 hover:bg-white hover:shadow-xl transition-all group">
+              <div class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform">
+                <span class="material-symbols-outlined">mail</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Email Marketing</h3>
+              <p class="text-sm text-primary/60 mb-6 leading-relaxed">Strategic campaign management focused on deliverability and high conversion.</p>
+              <a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary hover:gap-3 gap-2 transition-all" href="#">
+                Request Quote <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+
+            <!-- Service 8 -->
+            <div class="p-8 bg-primary rounded-2xl shadow-xl transition-all group flex flex-col justify-center items-center text-center">
+              <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-6">
+                <span class="material-symbols-outlined text-white text-3xl">add_circle</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-3">Need Custom?</h3>
+              <p class="text-sm text-white/70 mb-8">We build bespoke workflows for unique data challenges.</p>
+              <button class="w-full py-3 bg-white text-primary font-bold rounded-lg hover:bg-white/90 transition-all">
+                Talk to Expert
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Workflow (Redesigned, text unchanged) -->
+      <section class="py-24 bg-background-light" id="how-it-works">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col lg:flex-row justify-between items-end mb-14 gap-6">
+            <div class="max-w-xl">
+              <h2 class="text-3xl lg:text-4xl font-black mb-4">
+                <span class="text-ink">A Streamlined</span>
+                <span class="text-primary/70">Workflow</span>
+              </h2>
+              <p class="text-primary/60">
+                From initial consultation to final delivery, we prioritize transparency and speed.
+              </p>
+            </div>
+            <div class="hidden lg:block h-px bg-primary/10 flex-1 mx-12 mb-4"></div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Step 1 -->
+            <div class="relative p-8 bg-white rounded-2xl border border-line shadow-soft">
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-primary/5 flex items-center justify-center ring-1 ring-black/5">
+                  <span class="material-symbols-outlined text-primary">checklist</span>
+                </div>
+                <div class="text-sm font-black text-primary/25 tracking-widest">01</div>
+              </div>
+              <h4 class="text-xl font-bold mb-3">Choose Needs</h4>
+              <p class="text-sm text-primary/60">
+                Select from our modular services or request a custom solution tailored to your data architecture.
+              </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="relative p-8 bg-white rounded-2xl border border-line shadow-soft">
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-primary/5 flex items-center justify-center ring-1 ring-black/5">
+                  <span class="material-symbols-outlined text-primary">contract</span>
+                </div>
+                <div class="text-sm font-black text-primary/25 tracking-widest">02</div>
+              </div>
+              <h4 class="text-xl font-bold mb-3">Deadline &amp; Quotes</h4>
+              <p class="text-sm text-primary/60">
+                Receive a transparent, fixed-price quote and a guaranteed turnaround timeline for your project.
+              </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="relative p-8 bg-white rounded-2xl border border-line shadow-soft">
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-primary/5 flex items-center justify-center ring-1 ring-black/5">
+                  <span class="material-symbols-outlined text-primary">edit_note</span>
+                </div>
+                <div class="text-sm font-black text-primary/25 tracking-widest">03</div>
+              </div>
+              <h4 class="text-xl font-bold mb-3">Revisions</h4>
+              <p class="text-sm text-primary/60">
+                Review our work through our collaborative platform. We provide unlimited revisions for total accuracy.
+              </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="relative p-8 bg-white rounded-2xl border border-line shadow-soft">
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-primary/5 flex items-center justify-center ring-1 ring-black/5">
+                  <span class="material-symbols-outlined text-primary">receipt_long</span>
+                </div>
+                <div class="text-sm font-black text-primary/25 tracking-widest">04</div>
+              </div>
+              <h4 class="text-xl font-bold mb-3">Invoices</h4>
+              <p class="text-sm text-primary/60">
+                Simple, secure billing once you're 100% satisfied with the deliverables. No hidden fees.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Client Success (Updated with Swiper Autoplay, text unchanged) -->
+      <section class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-14">
+            <h2 class="text-3xl lg:text-4xl font-black mb-4">
+              <span class="text-ink">Client</span>
+              <span class="text-primary/70">Success</span>
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <!-- Left featured -->
+            <div class="lg:col-span-4">
+              <div class="bg-primary p-10 sm:p-12 rounded-3xl text-white shadow-glow relative overflow-hidden">
+                <div class="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-white/10 blur-2xl"></div>
+                <span class="material-symbols-outlined text-6xl mb-6 text-white/20">format_quote</span>
+                <p class="text-xl leading-relaxed font-medium mb-8">
+                  "INFIXX transformed our chaotic archives into a high-performance database in weeks. Their precision is unmatched."
+                </p>
+                <div class="flex items-center gap-4">
+                  <div class="w-12 h-12 rounded-full bg-cover ring-2 ring-white/20"
+                    data-alt="Portrait of a male business executive"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB39qEnOsOiP1-8Wo2JRB9q_N2vEuO2k4qOYCSGtNqw9EscPx_KM9Wa91-rpev-__o0vDlqRa-3srCAFU--W3plq87R3QJVsdiMEfF-Pp8iR1T5daLa1hQw3GcKykRkzF4_oMld1Oh120oUmBSxRNke1apGO60rdmgxMBsijSwJGAwO5Rb_3u6Yj4bcPt8irkXwT587Toc3sN8c3kWytR_JkYzpa7-ks9iU-adgagLjHfZgw1mi6bHxwL-8CpULGfp570_6-TDf9Jjx')"></div>
+                  <div>
+                    <p class="font-bold">Marcus Chen</p>
+                    <p class="text-sm text-white/60">CTO, NexusLink</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Swiper slider on right -->
+            <div class="lg:col-span-8">
+              <div class="swiper" id="successSwiper">
+                <div class="swiper-wrapper">
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide">
+                    <div class="p-8 bg-background-light rounded-2xl border border-primary/5 shadow-soft h-full">
+                      <div class="flex gap-1 mb-4 text-primary">
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                      </div>
+                      <p class="text-primary/70 mb-6 italic">
+                        "The lead generation service provided us with higher quality prospects than our previous three agencies combined."
+                      </p>
+                      <p class="font-bold">Sarah Jenkins</p>
+                      <p class="text-xs text-primary/50 uppercase tracking-widest">GlobalTech Marketing</p>
+                    </div>
+                  </div>
+
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide">
+                    <div class="p-8 bg-background-light rounded-2xl border border-primary/5 shadow-soft h-full">
+                      <div class="flex gap-1 mb-4 text-primary">
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                      </div>
+                      <p class="text-primary/70 mb-6 italic">
+                        "Their transcription accuracy for our legal proceedings was impeccable. We now use them for all internal audits."
+                      </p>
+                      <p class="font-bold">David Thorne</p>
+                      <p class="text-xs text-primary/50 uppercase tracking-widest">Thorne &amp; Co Law</p>
+                    </div>
+                  </div>
+
+                  <!-- Duplicate slides for smoother loop (same text) -->
+                  <div class="swiper-slide">
+                    <div class="p-8 bg-background-light rounded-2xl border border-primary/5 shadow-soft h-full">
+                      <div class="flex gap-1 mb-4 text-primary">
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                      </div>
+                      <p class="text-primary/70 mb-6 italic">
+                        "The lead generation service provided us with higher quality prospects than our previous three agencies combined."
+                      </p>
+                      <p class="font-bold">Sarah Jenkins</p>
+                      <p class="text-xs text-primary/50 uppercase tracking-widest">GlobalTech Marketing</p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="p-8 bg-background-light rounded-2xl border border-primary/5 shadow-soft h-full">
+                      <div class="flex gap-1 mb-4 text-primary">
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                      </div>
+                      <p class="text-primary/70 mb-6 italic">
+                        "Their transcription accuracy for our legal proceedings was impeccable. We now use them for all internal audits."
+                      </p>
+                      <p class="font-bold">David Thorne</p>
+                      <p class="text-xs text-primary/50 uppercase tracking-widest">Thorne &amp; Co Law</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-between mt-6">
+                  <div class="swiper-pagination !static"></div>
+                  <div class="flex gap-2">
+                    <button
+                      class="swiper-button-prev !static !w-10 !h-10 !m-0 rounded-xl border border-line bg-white hover:bg-primary/5 transition"
+                      aria-label="Previous"
+                      type="button"
+                    ></button>
+                    <button
+                      class="swiper-button-next !static !w-10 !h-10 !m-0 rounded-xl border border-line bg-white hover:bg-primary/5 transition"
+                      aria-label="Next"
+                      type="button"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section (Plus click works) -->
+      <section class="py-24 bg-background-light" id="faq">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl lg:text-4xl font-black mb-12 text-center">
+            <span class="text-ink">Frequently</span>
+            <span class="text-primary/70">Asked Questions</span>
+          </h2>
+
+          <div class="space-y-4">
+            <!-- FAQ 1 -->
+            <div class="bg-white rounded-2xl border border-line overflow-hidden shadow-soft">
+              <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center group" type="button" aria-expanded="false">
+                <span class="font-bold">What is your typical turnaround time?</span>
+                <span class="material-symbols-outlined text-primary/40 group-hover:text-primary transition-colors faq-icon">add</span>
+              </button>
+              <div class="faq-panel px-6 pb-6 text-primary/60 text-sm leading-relaxed hidden"></div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="bg-white rounded-2xl border border-line overflow-hidden shadow-soft">
+              <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center group" type="button" aria-expanded="false">
+                <span class="font-bold">How do you ensure data security?</span>
+                <span class="material-symbols-outlined text-primary/40 group-hover:text-primary transition-colors faq-icon">add</span>
+              </button>
+              <div class="faq-panel px-6 pb-6 text-primary/60 text-sm leading-relaxed hidden"></div>
+            </div>
+
+            <!-- FAQ 3 (kept your content, now toggle works) -->
+            <div class="bg-white rounded-2xl border border-line overflow-hidden shadow-soft">
+              <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center group" type="button" aria-expanded="true">
+                <span class="font-bold">Do you offer discounts for high-volume recurring projects?</span>
+                <span class="material-symbols-outlined text-primary transition-colors faq-icon">add</span>
+              </button>
+              <div class="faq-panel px-6 pb-6 text-primary/60 text-sm leading-relaxed">
+                Yes, we offer tiered pricing models for enterprise partners and recurring monthly workflows. Contact our sales team to discuss a long-term partnership agreement tailored to your volume requirements.
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="bg-white rounded-2xl border border-line overflow-hidden shadow-soft">
+              <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center group" type="button" aria-expanded="false">
+                <span class="font-bold">What file formats can you process?</span>
+                <span class="material-symbols-outlined text-primary/40 group-hover:text-primary transition-colors faq-icon">add</span>
+              </button>
+              <div class="faq-panel px-6 pb-6 text-primary/60 text-sm leading-relaxed hidden"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer (BG upgraded) -->
+      <footer class="pt-20 pb-10 border-t border-primary/5 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-primary/5 to-primary/0"></div>
+        <div class="absolute -top-24 -right-24 w-[26rem] h-[26rem] rounded-full bg-primary/10 blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 lg:col-span-1">
+              <div class="flex items-center gap-2 mb-6">
+                <div class="bg-primary p-1 rounded-lg shadow-soft ring-1 ring-black/5">
+                  <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <span class="text-xl font-black tracking-tighter text-ink">INFIXX</span>
+              </div>
+              <p class="text-sm text-primary/60 leading-relaxed">
+                Empowering modern industries with precision data management and high-fidelity document transformation services.
+              </p>
+            </div>
+
+            <div>
+              <h4 class="font-bold mb-6 text-ink">Quick Links</h4>
+              <ul class="space-y-4 text-sm text-primary/60">
+                <li><a class="hover:text-ink transition-colors" href="#">About Us</a></li>
+                <li><a class="hover:text-ink transition-colors" href="#services">Our Services</a></li>
+                <li><a class="hover:text-ink transition-colors" href="#how-it-works">Process</a></li>
+                <li><a class="hover:text-ink transition-colors" href="#">Case Studies</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-bold mb-6 text-ink">Services</h4>
+              <ul class="space-y-4 text-sm text-primary/60">
+                <li><a class="hover:text-ink transition-colors" href="#">Data Management</a></li>
+                <li><a class="hover:text-ink transition-colors" href="#">Transcription</a></li>
+                <li><a class="hover:text-ink transition-colors" href="#">B2B Leads</a></li>
+                <li><a class="hover:text-ink transition-colors" href="#">Translation</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-bold mb-6 text-ink">Contact</h4>
+              <ul class="space-y-4 text-sm text-primary/60">
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary/40 text-sm mt-1">location_on</span>
+                  1201 Digital Plaza, Suite 400<br />San Francisco, CA 94103
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary/40 text-sm">mail</span>
+                  hello@infixx.services
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary/40 text-sm">phone</span>
+                  +1 (800) 555-DATA
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="border-t border-primary/10 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-xs text-primary/50 uppercase tracking-widest font-medium">
+              © 2024 INFIXX Digital Services. All rights reserved.
+            </p>
+            <div class="flex gap-6 text-primary/50 items-center">
+              <a class="hover:text-ink transition-colors" href="#"><span class="material-symbols-outlined text-xl">language</span></a>
+              <a class="hover:text-ink transition-colors text-xs font-bold uppercase" href="#">Privacy Policy</a>
+              <a class="hover:text-ink transition-colors text-xs font-bold uppercase" href="#">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+<script src="js/index.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -52,9 +52,9 @@
 
 /* Responsive logo sizing (all devices) */
 .marquee-logo{
-  height: 39px;             /* mobile */
+  height: 30px;             /* mobile */
   width: auto;
-  max-width: 140px;
+  max-width: 130px;
   object-fit: contain;
   opacity: .85;
   transition: transform .25s ease, opacity .25s ease;
@@ -67,7 +67,7 @@
 
 /* tablet */
 @media (min-width: 640px){
-  .marquee-logo{ height: 38px; max-width: 170px; }
+  .marquee-logo{ height: 35px; max-width: 140px; }
 }
 
 /* desktop */
@@ -94,7 +94,19 @@
       }
       .swiper-pagination-bullet {
         opacity: 0.25;
+        
       }
       .swiper-pagination-bullet-active {
         opacity: 1;
+        background-color: #000;
+        
       }
+      .swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 25px;
+  font-weight: 900;
+  color: black;
+}
+.swiper-pagination{
+  color: #000;
+}

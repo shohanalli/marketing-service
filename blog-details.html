@@ -1,0 +1,607 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>INFIXX | Professional Data Services</title>
+    <meta
+      content="High-end digital services tailored for industry leaders. Streamline your workflow with our expert document and data solutions."
+      name="description"
+    />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/global.js"></script>
+  </head>
+
+  <body class="bg-background-light text-primary font-display antialiased">
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 h-full border-b border-line glass-effect">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <!-- Logo (Responsive) -->
+          <a href="#" class="flex items-center shrink-0">
+            <img
+              src="image/logo.png"
+              alt="INFIXX Logo"
+              class="h-8 sm:h-10 md:h-12 lg:h-14 w-auto max-w-[160px] sm:max-w-[200px] object-contain"
+            />
+          </a>
+
+          <!-- Navigation (Desktop) -->
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              class="text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+              href="index.html"
+              >Home</a
+            >
+            <div class="relative group">
+              <button
+                class="flex items-center gap-1 text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+                type="button"
+              >
+                Services
+                <span class="material-symbols-outlined text-sm"
+                  >expand_more</span
+                >
+              </button>
+              <!-- Dropdown -->
+              <div
+                class="absolute top-full left-0 w-64 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
+              >
+                <div
+                  class="bg-white border border-line rounded-2xl shadow-soft p-3 grid gap-1"
+                >
+                  <a
+                    class="p-2.5 hover:bg-primary/5 rounded-xl text-sm font-medium"
+                    href="index.html#services"
+                    >Data Management</a
+                  >
+                  <a
+                    class="p-2.5 hover:bg-primary/5 rounded-xl text-sm font-medium"
+                    href="index.html#services"
+                    >Digital Marketing</a
+                  >
+                  <a
+                    class="p-2.5 hover:bg-primary/5 rounded-xl text-sm font-medium"
+                    href="index.html#services"
+                    >Creative Solutions</a
+                  >
+                </div>
+              </div>
+            </div>
+            <a
+              class="text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+              href="index.html#how-it-works"
+              >Process</a
+            >
+            <a
+              class="text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+              href="index.html#faq"
+              >FAQ</a
+            >
+          </nav>
+
+          <!-- CTA + Mobile Menu Button -->
+          <div class="flex items-center gap-3">
+            <a
+              href="index.html#contact"
+              class="hidden md:flex items-center justify-center rounded-xl h-10 px-5 bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-all shadow-soft"
+            >
+              Contact Us
+            </a>
+
+            <button
+              id="mobileMenuBtn"
+              class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-line bg-white hover:bg-primary/5 transition"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobileMenuPanel"
+            >
+              <span class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+
+        <div
+          id="mobileMenuPanel"
+          class="menu-panel hidden md:hidden pb-5"
+          role="dialog"
+          aria-label="Mobile Menu"
+        >
+          <div class="bg-white border border-line rounded-2xl shadow-soft p-3">
+            <div class="flex items-center justify-between px-1 pb-2">
+              <span class="text-sm font-bold text-ink/80">Menu</span>
+
+              <button
+                type="button"
+                class="inline-flex items-center justify-center w-10 h-10 rounded-xl border border-line hover:bg-primary/5 transition"
+                aria-label="Close menu"
+                data-menu-close
+              >
+                <span class="material-symbols-outlined text-2xl">close</span>
+              </button>
+            </div>
+
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html"
+              >Home</a
+            >
+
+            <div
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+            >
+              Services
+            </div>
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#services"
+              >Data Management</a
+            >
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#services"
+              >Digital Marketing</a
+            >
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#services"
+              >Creative Solutions</a
+            >
+
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#how-it-works"
+              >Process</a
+            >
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#faq"
+              >FAQ</a
+            >
+
+            <div class="pt-2">
+              <a
+                href="index.html#contact"
+                class="w-full h-11 rounded-xl bg-primary text-white font-bold text-sm hover:bg-primary/90 transition shadow-soft"
+              >
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- Breadcrumbs -->
+      <nav
+        aria-label="Breadcrumb"
+        class="flex items-center gap-2 text-sm text-primary/60 mb-8"
+      >
+        <a class="hover:text-primary transition-colors" href="#">Home</a>
+        <span class="material-symbols-outlined text-xs">chevron_right</span>
+        <a class="hover:text-primary transition-colors" href="#">Insights</a>
+        <span class="material-symbols-outlined text-xs">chevron_right</span>
+        <span class="text-primary font-medium truncate"
+          >The Future of Digital Transformation</span
+        >
+      </nav>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+        <!-- Main Content Area -->
+        <article class="lg:col-span-8">
+          <!-- Blog Header -->
+          <header class="mb-12">
+            <div class="flex flex-wrap gap-3 mb-6">
+              <span
+                class="px-3 py-1 bg-primary text-white text-[10px] font-bold uppercase tracking-widest rounded-full"
+                >Strategy</span
+              >
+              <span
+                class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-widest rounded-full"
+                >Tech Trends</span
+              >
+            </div>
+            <h1
+              class="text-4xl md:text-6xl font-black text-primary leading-[1.1] tracking-tight mb-8"
+            >
+              The Future of Digital Transformation in 2024
+            </h1>
+            <div
+              class="flex flex-wrap items-center justify-between gap-6 pb-8 border-b border-primary/10"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="size-14 rounded-full bg-cover bg-center ring-2 ring-primary/5"
+                  data-alt="Portrait of professional author Alex Rivera"
+                  style="
+                    background-image: url(image/blog-details.png);
+                  "
+                ></div>
+                <div>
+                  <h4 class="text-lg font-bold text-primary">Alex Rivera</h4>
+                  <p class="text-sm text-primary/60">
+                    Senior Digital Strategist
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-6 text-sm text-primary/60">
+                <div class="flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-lg"
+                    >calendar_today</span
+                  >
+                  <span>Oct 24, 2023</span>
+                </div>
+              </div>
+            </div>
+          </header>
+          <!-- Featured Image -->
+          <div
+            class="relative w-full aspect-video rounded-xl overflow-hidden mb-12 shadow-2xl shadow-primary/10"
+          >
+            <img
+              alt="Featured post image"
+              class="w-full h-full object-cover"
+              data-alt="Futuristic glowing digital network nodes abstract landscape"
+              src="image/blog-feature2.png"
+            />
+          </div>
+          <!-- Rich Text Content -->
+          <div
+            class="prose prose-lg prose-primary max-w-none text-primary/80 leading-relaxed"
+          >
+            <p class="text-xl leading-relaxed mb-8">
+              The digital landscape is undergoing a seismic shift. As we
+              approach 2024, enterprises are moving beyond simple cloud
+              migration toward holistic digital ecosystems powered by generative
+              AI and real-time edge computing.
+            </p>
+            <h2
+              class="text-3xl font-bold text-primary mt-12 mb-6 tracking-tight"
+            >
+              The AI-First Paradigm
+            </h2>
+            <p class="mb-6">
+              Organizations are no longer just "using" AI; they are rebuilding
+              their entire operation around it. This transformation involves
+              democratizing data access across every department, ensuring that
+              every decision is backed by predictive analytics rather than just
+              intuition.
+            </p>
+            <blockquote class="my-10 italic font-medium text-primary">
+              "Digital transformation is no longer a choice of competitive
+              advantage, but a necessity for survival in a market that moves at
+              the speed of code."
+            </blockquote>
+            <h3
+              class="text-2xl font-bold text-primary mt-8 mb-4 tracking-tight"
+            >
+              Key Pillars for 2024
+            </h3>
+            <ul class="list-disc pl-6 space-y-3 mb-8">
+              <li>
+                <strong>Hyper-Personalization:</strong> Using AI to predict
+                customer needs before they even arise.
+              </li>
+              <li>
+                <strong>Sustainable Tech:</strong> Building infrastructure that
+                minimizes carbon footprints.
+              </li>
+              <li>
+                <strong>Cyber-Resilience:</strong> Shifting from defense to
+                proactive resilience through automated threat hunting.
+              </li>
+            </ul>
+            <div
+              class="my-12 rounded-xl overflow-hidden border border-primary/5"
+            >
+              <img
+                alt="Cyber security concept"
+                class="w-full h-72 object-cover"
+                data-alt="Abstract hardware circuit board with blue glowing light paths"
+                src="image/blog-feature2.png"
+              />
+              <p class="text-sm text-center py-4 bg-primary/5 text-primary/60">
+                Digital security will be the foundation of all 2024 initiatives.
+              </p>
+            </div>
+            <p>
+              In conclusion, the coming year will separate the leaders from the
+              laggards. Those who invest in agile systems today will be the ones
+              defining the market standards of tomorrow. We recommend a phased
+              approach, starting with high-impact data silos.
+            </p>
+          </div>
+        </article>
+        <!-- Sidebar -->
+        <aside class="lg:col-span-4 space-y-12">
+          <!-- Search Box -->
+          <div class="bg-white p-6 rounded-xl border border-primary/10">
+            <h3 class="text-lg font-bold text-primary mb-4">Search Blog</h3>
+            <div class="relative">
+              <input
+                class="w-full pl-10 pr-4 py-3 bg-background-light border-none rounded-lg focus:ring-2 focus:ring-primary text-primary"
+                placeholder="Keywords..."
+                type="text"
+              />
+              <span
+                class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-primary/40"
+                >search</span
+              >
+            </div>
+          </div>
+          <!-- Recent Posts -->
+          <div class="sticky top-28 space-y-12">
+            <div>
+              <h3
+                class="text-xl font-bold text-primary mb-6 flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-primary">bolt</span>
+                Recent Articles
+              </h3>
+              <div class="space-y-6">
+                <a class="group flex gap-4" href="#">
+                  <div
+                    class="size-20 rounded-lg bg-cover bg-center shrink-0 overflow-hidden"
+                    data-alt="Data visualization graphs on a screen"
+                    style="
+                      background-image: url(image/recent1.png);
+                    "
+                  ></div>
+                  <div>
+                    <h4
+                      class="text-sm font-bold text-primary group-hover:text-primary/60 transition-colors leading-tight mb-1"
+                    >
+                      Maximizing ROI with AI-Driven Data
+                    </h4>
+                    <p
+                      class="text-[10px] text-primary/40 uppercase font-bold tracking-widest"
+                    >
+                      Analytics • 3 min read
+                    </p>
+                  </div>
+                </a>
+                <a class="group flex gap-4" href="#">
+                  <div
+                    class="size-20 rounded-lg bg-cover bg-center shrink-0 overflow-hidden"
+                    data-alt="Designer working on a mobile UI interface"
+                    style="
+                      background-image: url(image/recent2.png);
+                    "
+                  ></div>
+                  <div>
+                    <h4
+                      class="text-sm font-bold text-primary group-hover:text-primary/60 transition-colors leading-tight mb-1"
+                    >
+                      UX Trends to Watch for This Fall
+                    </h4>
+                    <p
+                      class="text-[10px] text-primary/40 uppercase font-bold tracking-widest"
+                    >
+                      Design • 5 min read
+                    </p>
+                  </div>
+                </a>
+                <a class="group flex gap-4" href="#">
+                  <div
+                    class="size-20 rounded-lg bg-cover bg-center shrink-0 overflow-hidden"
+                    data-alt="Green matrix code rain effect"
+                    style="
+                      background-image: url(image/recent3.png);
+                    "
+                  ></div>
+                  <div>
+                    <h4
+                      class="text-sm font-bold text-primary group-hover:text-primary/60 transition-colors leading-tight mb-1"
+                    >
+                      Building Secure Enterprise Apps
+                    </h4>
+                    <p
+                      class="text-[10px] text-primary/40 uppercase font-bold tracking-widest"
+                    >
+                      DevOps • 8 min read
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Categories -->
+            <div>
+              <h3 class="text-xl font-bold text-primary mb-6">Categories</h3>
+              <div class="flex flex-wrap gap-2">
+                <a
+                  class="px-4 py-2 bg-white border border-primary/10 rounded-lg text-xs font-bold text-primary/60 hover:border-primary hover:text-primary transition-all"
+                  href="#"
+                  >Transformation (12)</a
+                >
+                <a
+                  class="px-4 py-2 bg-white border border-primary/10 rounded-lg text-xs font-bold text-primary/60 hover:border-primary hover:text-primary transition-all"
+                  href="#"
+                  >Design Systems (8)</a
+                >
+                <a
+                  class="px-4 py-2 bg-white border border-primary/10 rounded-lg text-xs font-bold text-primary/60 hover:border-primary hover:text-primary transition-all"
+                  href="#"
+                  >AI/ML (15)</a
+                >
+                <a
+                  class="px-4 py-2 bg-white border border-primary/10 rounded-lg text-xs font-bold text-primary/60 hover:border-primary hover:text-primary transition-all"
+                  href="#"
+                  >Web3 (4)</a
+                >
+                <a
+                  class="px-4 py-2 bg-white border border-primary/10 rounded-lg text-xs font-bold text-primary/60 hover:border-primary hover:text-primary transition-all"
+                  href="#"
+                  >Marketing (21)</a
+                >
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <!-- Footer (BG upgraded) -->
+    <footer
+      class="pt-20 pb-10 border-t border-primary/5 relative overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-primary/5 to-primary/0"
+      ></div>
+      <div
+        class="absolute -top-24 -right-24 w-[26rem] h-[26rem] rounded-full bg-primary/10 blur-3xl"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16"
+        >
+          <div class="col-span-1 lg:col-span-1">
+            <div class="flex items-center gap-2 mb-6">
+              <a href="#" class="flex items-center shrink-0">
+                <img
+                  src="image/logo.png"
+                  alt="INFIXX Logo"
+                  class="h-6 md:h-8 lg:h-10 w-auto max-w-[160px] sm:max-w-[200px] object-contain"
+                />
+              </a>
+            </div>
+            <p class="text-sm text-primary/60 leading-relaxed">
+              Empowering modern industries with precision data management and
+              high-fidelity document transformation services.
+            </p>
+                          <div class="flex gap-3 mt-6">
+<a class="size-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-black/20 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="size-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-black/20 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">thumb_up</span>
+</a>
+<a class="size-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-black/20 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">smart_display</span>
+</a>
+</div>
+          </div>
+
+            <div>
+              <h4 class="font-bold mb-6 text-ink">Quick Links</h4>
+              <ul class="space-y-4 text-sm text-primary/70">
+                <li>
+                  <a class="hover:text-ink transition-colors" href="index.html#services"
+                    >Our Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-ink transition-colors"
+                    href="index.html#how-it-works"
+                    >Process</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-ink transition-colors" href="privacy-policy.html"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-ink transition-colors" href="refund-policy.html"
+                    >Refund Policy</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-ink transition-colors" href="index.html#blog"
+                    >Blog</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+          <div>
+            <h4 class="font-bold mb-6 text-ink">Services</h4>
+            <ul class="space-y-4 text-sm text-primary/80">
+              <li>
+                <a class="hover:text-ink transition-colors" href="#"
+                  >Data Management</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-ink transition-colors" href="#"
+                  >Transcription</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-ink transition-colors" href="#"
+                  >B2B Leads</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-ink transition-colors" href="#"
+                  >Translation</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-6 text-ink">Contact</h4>
+            <ul class="space-y-4 text-sm text-primary/90">
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-symbols-outlined text-primary/40 text-sm mt-1"
+                  >location_on</span
+                >
+                1201 Digital Plaza, Suite 400<br />San Francisco, CA 94103
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary/40 text-sm"
+                  >mail</span
+                >
+                hello@infixx.services
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary/40 text-sm"
+                  >phone</span
+                >
+                +1 (800) 555-DATA
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-primary/10 pt-10 flex flex-col justify-between items-center gap-6"
+        >
+          <p
+            class="text-xs text-primary/50 uppercase tracking-widest font-medium"
+          >
+            © 2026 INFIXX Services. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

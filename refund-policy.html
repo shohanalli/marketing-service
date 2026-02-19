@@ -1,0 +1,728 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>INFIXX | Professional Data Services</title>
+    <meta
+      content="High-end digital services tailored for industry leaders. Streamline your workflow with our expert document and data solutions."
+      name="description"
+    />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/global.js"></script>
+  </head>
+
+  <body class="bg-background-light text-primary font-display antialiased">
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 h-full border-b border-line glass-effect">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <!-- Logo (Responsive) -->
+          <a href="#" class="flex items-center shrink-0">
+            <img
+              src="image/logo.png"
+              alt="INFIXX Logo"
+              class="h-8 sm:h-10 md:h-12 lg:h-14 w-auto max-w-[160px] sm:max-w-[200px] object-contain"
+            />
+          </a>
+
+          <!-- Navigation (Desktop) -->
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              class="text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+              href="index.html"
+              >Home</a
+            >
+            <div class="relative group">
+              <button
+                class="flex items-center gap-1 text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+                type="button"
+              >
+                Services
+                <span class="material-symbols-outlined text-sm"
+                  >expand_more</span
+                >
+              </button>
+              <!-- Dropdown -->
+              <div
+                class="absolute top-full left-0 w-64 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
+              >
+                <div
+                  class="bg-white border border-line rounded-2xl shadow-soft p-3 grid gap-1"
+                >
+                  <a
+                    class="p-2.5 hover:bg-primary/5 rounded-xl text-sm font-medium"
+                    href="index.html#services"
+                    >Data Management</a
+                  >
+                  <a
+                    class="p-2.5 hover:bg-primary/5 rounded-xl text-sm font-medium"
+                    href="index.html#services"
+                    >Digital Marketing</a
+                  >
+                  <a
+                    class="p-2.5 hover:bg-primary/5 rounded-xl text-sm font-medium"
+                    href="index.html#services"
+                    >Creative Solutions</a
+                  >
+                </div>
+              </div>
+            </div>
+            <a
+              class="text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+              href="index.html#how-it-works"
+              >Process</a
+            >
+            <a
+              class="text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+              href="index.html#faq"
+              >FAQ</a
+            >
+          </nav>
+
+          <!-- CTA + Mobile Menu Button -->
+          <div class="flex items-center gap-3">
+            <a
+              href="index.html#contact"
+              class="hidden md:flex items-center justify-center rounded-xl h-10 px-5 bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-all shadow-soft"
+            >
+              Contact Us
+            </a>
+
+            <button
+              id="mobileMenuBtn"
+              class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-line bg-white hover:bg-primary/5 transition"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobileMenuPanel"
+            >
+              <span class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+
+        <div
+          id="mobileMenuPanel"
+          class="menu-panel hidden md:hidden pb-5"
+          role="dialog"
+          aria-label="Mobile Menu"
+        >
+          <div class="bg-white border border-line rounded-2xl shadow-soft p-3">
+            <div class="flex items-center justify-between px-1 pb-2">
+              <span class="text-sm font-bold text-ink/80">Menu</span>
+
+              <button
+                type="button"
+                class="inline-flex items-center justify-center w-10 h-10 rounded-xl border border-line hover:bg-primary/5 transition"
+                aria-label="Close menu"
+                data-menu-close
+              >
+                <span class="material-symbols-outlined text-2xl">close</span>
+              </button>
+            </div>
+
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html"
+              >Home</a
+            >
+
+            <div
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+            >
+              Services
+            </div>
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#services"
+              >Data Management</a
+            >
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#services"
+              >Digital Marketing</a
+            >
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#services"
+              >Creative Solutions</a
+            >
+
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#how-it-works"
+              >Process</a
+            >
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#faq"
+              >FAQ</a
+            >
+
+            <div class="pt-2">
+              <a
+                href="index.html#contact"
+                class="w-full h-11 rounded-xl bg-primary text-white font-bold text-sm hover:bg-primary/90 transition shadow-soft"
+              >
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="relative py-8 sm:py-12 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <nav
+            class="flex justify-center mb-4 gap-2 text-sm font-medium text-slate-500"
+          >
+            <a class="hover:text-primary" href="#">Home</a>
+            <span>/</span>
+            <span class="text-primary">Refund Policy</span>
+          </nav>
+          <h1
+            class="text-4xl sm:text-6xl font-black text-slate-900 dark:text-white mb-4 tracking-tight"
+          >
+            Refund Policy
+          </h1>
+          <p class="text-slate-500 dark:text-slate-400 text-lg mb-8">
+            Last Updated: October 24, 2023
+          </p>
+        </div>
+        <!-- Abstract background element -->
+      </section>
+      <!-- Content Section -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="flex flex-col lg:flex-row gap-12">
+          <!-- Sidebar Navigation -->
+          <aside class="lg:w-1/4">
+            <div class="sticky top-24 space-y-1">
+              <p
+                class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4 px-2"
+              >
+                On this page
+              </p>
+              <a
+                class="sidebar-link block py-2 px-2 text-sm text-slate-500 hover:text-primary transition-all"
+                href="#introduction"
+                >1. Introduction</a
+              >
+              <a
+                class="sidebar-link block py-2 px-2 text-sm text-slate-500 hover:text-primary transition-all"
+                href="#eligibility"
+                >2. Eligibility for Refunds</a
+              >
+              <a
+                class="sidebar-link block py-2 px-2 text-sm text-slate-500 hover:text-primary transition-all"
+                href="#non-refundable"
+                >3. Non-refundable Services</a
+              >
+              <a
+                class="sidebar-link block py-2 px-2 text-sm text-slate-500 hover:text-primary transition-all"
+                href="#process"
+                >4. Refund Process</a
+              >
+              <a
+                class="sidebar-link block py-2 px-2 text-sm text-slate-500 hover:text-primary transition-all"
+                href="#timeline"
+                >5. Processing Timeline</a
+              >
+              <a
+                class="sidebar-link block py-2 px-2 text-sm text-slate-500 hover:text-primary transition-all"
+                href="#contact"
+                >6. Contact Information</a
+              >
+            </div>
+          </aside>
+          <!-- Policy Content -->
+          <article class="lg:w-3/4 max-w-none prose dark:prose-invert">
+            <section class="mb-16 scroll-mt-24" id="introduction">
+              <h2
+                class="text-3xl font-bold text-slate-900 dark:text-white mb-6"
+              >
+                1. Introduction
+              </h2>
+              <div
+                class="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed text-lg"
+              >
+                <p>
+                  At INFIXX, we are committed to delivering high-quality digital
+                  solutions and ensuring our clients' success. We understand
+                  that circumstances may change, and we aim to provide a fair
+                  and transparent refund process.
+                </p>
+                <p>
+                  This policy outlines the conditions under which refunds may be
+                  requested, the categories of services that are non-refundable,
+                  and the steps required to initiate a claim. By engaging our
+                  services, you acknowledge and agree to the terms set forth in
+                  this document.
+                </p>
+              </div>
+            </section>
+            <section class="mb-16 scroll-mt-24" id="eligibility">
+              <div
+                class="p-8 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm"
+              >
+                <h2
+                  class="text-3xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-3"
+                >
+                  <span class="material-symbols-outlined text-primary"
+                    >verified_user</span
+                  >
+                  2. Eligibility for Refunds
+                </h2>
+                <p class="text-slate-600 dark:text-slate-300 mb-6">
+                  Clients may be eligible for a refund under the following
+                  specific conditions:
+                </p>
+                <ul class="space-y-4 list-none p-0">
+                  <li class="flex gap-3">
+                    <span class="material-symbols-outlined text-primary"
+                      >check_circle</span
+                    >
+                    <span class="text-slate-600 dark:text-slate-300"
+                      >Project non-commencement: If INFIXX has not started work
+                      on the project within 14 business days of the initial
+                      payment.</span
+                    >
+                  </li>
+                  <li class="flex gap-3">
+                    <span class="material-symbols-outlined text-primary"
+                      >check_circle</span
+                    >
+                    <span class="text-slate-600 dark:text-slate-300"
+                      >Failure to deliver: If the agreed-upon milestones or
+                      deliverables are not met within a reasonable timeframe
+                      beyond the projected deadline.</span
+                    >
+                  </li>
+                  <li class="flex gap-3">
+                    <span class="material-symbols-outlined text-primary"
+                      >check_circle</span
+                    >
+                    <span class="text-slate-600 dark:text-slate-300"
+                      >Service errors: Significant technical errors or
+                      deviations from the signed scope of work that INFIXX is
+                      unable to rectify.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section class="mb-16 scroll-mt-24" id="non-refundable">
+              <h2
+                class="text-3xl font-bold text-slate-900 dark:text-white mb-6"
+              >
+                3. Non-refundable Services
+              </h2>
+              <p class="text-slate-600 dark:text-slate-400 mb-6">
+                Please note that the following services and expenses are
+                strictly non-refundable once the project has commenced:
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div
+                  class="p-4 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-start gap-3"
+                >
+                  <span class="material-symbols-outlined text-red-500"
+                    >cancel</span
+                  >
+                  <div>
+                    <p class="font-bold text-slate-900 dark:text-white">
+                      Domain &amp; Hosting
+                    </p>
+                    <p class="text-sm text-slate-500">
+                      Fees paid for third-party registrations.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="p-4 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-start gap-3"
+                >
+                  <span class="material-symbols-outlined text-red-500"
+                    >cancel</span
+                  >
+                  <div>
+                    <p class="font-bold text-slate-900 dark:text-white">
+                      Hours Worked
+                    </p>
+                    <p class="text-sm text-slate-500">
+                      Billable hours for completed milestones.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="p-4 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-start gap-3"
+                >
+                  <span class="material-symbols-outlined text-red-500"
+                    >cancel</span
+                  >
+                  <div>
+                    <p class="font-bold text-slate-900 dark:text-white">
+                      Third-party Assets
+                    </p>
+                    <p class="text-sm text-slate-500">
+                      Stock images, plugins, or software licenses.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="p-4 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-start gap-3"
+                >
+                  <span class="material-symbols-outlined text-red-500"
+                    >cancel</span
+                  >
+                  <div>
+                    <p class="font-bold text-slate-900 dark:text-white">
+                      Rush Fees
+                    </p>
+                    <p class="text-sm text-slate-500">
+                      Expedited service surcharges.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="mb-16 scroll-mt-24" id="process">
+              <h2
+                class="text-3xl font-bold text-slate-900 dark:text-white mb-8"
+              >
+                4. Refund Process
+              </h2>
+              <div
+                class="relative space-y-8 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent"
+              >
+                <!-- Step 1 -->
+                <div
+                  class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
+                >
+                  <div
+                    class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
+                  >
+                    <span class="text-xs font-bold">01</span>
+                  </div>
+                  <div
+                    class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded border border-slate-200 bg-white dark:bg-slate-900 dark:border-slate-800 shadow-sm"
+                  >
+                    <div
+                      class="flex items-center justify-between space-x-2 mb-1"
+                    >
+                      <div class="font-bold text-slate-900 dark:text-white">
+                        Submit Request
+                      </div>
+                    </div>
+                    <div class="text-slate-500 text-sm">
+                      Email support@infixx.com with your project ID and reason
+                      for the refund.
+                    </div>
+                  </div>
+                </div>
+                <!-- Step 2 -->
+                <div
+                  class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
+                >
+                  <div
+                    class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
+                  >
+                    <span class="text-xs font-bold">02</span>
+                  </div>
+                  <div
+                    class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded border border-slate-200 bg-white dark:bg-slate-900 dark:border-slate-800 shadow-sm"
+                  >
+                    <div
+                      class="flex items-center justify-between space-x-2 mb-1"
+                    >
+                      <div class="font-bold text-slate-900 dark:text-white">
+                        Review Phase
+                      </div>
+                    </div>
+                    <div class="text-slate-500 text-sm">
+                      Our billing team will review your request against the
+                      project agreement and milestones.
+                    </div>
+                  </div>
+                </div>
+                <!-- Step 3 -->
+                <div
+                  class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
+                >
+                  <div
+                    class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
+                  >
+                    <span class="text-xs font-bold">03</span>
+                  </div>
+                  <div
+                    class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded border border-slate-200 bg-white dark:bg-slate-900 dark:border-slate-800 shadow-sm"
+                  >
+                    <div
+                      class="flex items-center justify-between space-x-2 mb-1"
+                    >
+                      <div class="font-bold text-slate-900 dark:text-white">
+                        Outcome Notification
+                      </div>
+                    </div>
+                    <div class="text-slate-500 text-sm">
+                      You will receive a formal response regarding the approval
+                      or rejection of your request.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="mb-16 scroll-mt-24" id="timeline">
+              <h2
+                class="text-3xl font-bold text-slate-900 dark:text-white mb-6"
+              >
+                5. Processing Timeline
+              </h2>
+              <div
+                class="bg-primary/5 border border-primary/10 rounded-xl p-6 flex items-start gap-4"
+              >
+                <span class="material-symbols-outlined text-primary text-3xl"
+                  >schedule</span
+                >
+                <div>
+                  <p
+                    class="text-slate-900 dark:text-white font-bold mb-2 text-lg"
+                  >
+                    7-10 Business Days
+                  </p>
+                  <p class="text-slate-600 dark:text-slate-400">
+                    Approved refunds are processed back to the original payment
+                    method. Please note that bank processing times may vary and
+                    are beyond the control of INFIXX.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section class="scroll-mt-24" id="contact">
+              <div
+                class="bg-primary text-white rounded-2xl p-8 sm:p-12 overflow-hidden relative"
+              >
+                <div class="relative z-10">
+                  <h2 class="text-3xl font-bold mb-4">
+                    6. Contact Information
+                  </h2>
+                  <p class="text-white/80 mb-8 max-w-md">
+                    If you have any questions about our refund policy, please
+                    don't hesitate to reach out to our dedicated support team.
+                  </p>
+                  <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                      <span class="material-symbols-outlined">mail</span>
+                      <span class="font-medium">billing@infixx.com</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                      <span class="material-symbols-outlined"
+                        >support_agent</span
+                      >
+                      <span class="font-medium"
+                        >Support Portal: support.infixx.com</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="absolute right-0 bottom-0 opacity-10 translate-x-1/4 translate-y-1/4"
+                >
+                  <span class="material-symbols-outlined text-[200px]"
+                    >help</span
+                  >
+                </div>
+              </div>
+            </section>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer (BG upgraded) -->
+    <footer
+      class="pt-20 pb-10 border-t border-primary/5 relative overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-primary/5 to-primary/0"
+      ></div>
+      <div
+        class="absolute -top-24 -right-24 w-[26rem] h-[26rem] rounded-full bg-primary/10 blur-3xl"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16"
+        >
+          <div class="col-span-1 lg:col-span-1">
+            <div class="flex items-center gap-2 mb-6">
+              <a href="#" class="flex items-center shrink-0">
+                <img
+                  src="image/logo.png"
+                  alt="INFIXX Logo"
+                  class="h-6 md:h-8 lg:h-10 w-auto max-w-[160px] sm:max-w-[200px] object-contain"
+                />
+              </a>
+            </div>
+            <p class="text-sm text-primary/60 leading-relaxed">
+              Empowering modern industries with precision data management and
+              high-fidelity document transformation services.
+            </p>
+            <div class="flex gap-3 mt-6">
+              <a
+                class="size-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-black/20 transition-colors"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-lg">public</span>
+              </a>
+              <a
+                class="size-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-black/20 transition-colors"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-lg">thumb_up</span>
+              </a>
+              <a
+                class="size-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-black/20 transition-colors"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-lg"
+                  >smart_display</span
+                >
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-6 text-ink">Quick Links</h4>
+            <ul class="space-y-4 text-sm text-primary/70">
+              <li>
+                <a
+                  class="hover:text-ink transition-colors"
+                  href="index.html#services"
+                  >Our Services</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-ink transition-colors"
+                  href="index.html#how-it-works"
+                  >Process</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-ink transition-colors"
+                  href="privacy-policy.html"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-ink transition-colors"
+                  href="refund-policy.html"
+                  >Refund Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-ink transition-colors"
+                  href="index.html#blog"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-6 text-ink">Services</h4>
+            <ul class="space-y-4 text-sm text-primary/80">
+              <li>
+                <a class="hover:text-ink transition-colors" href="#"
+                  >Data Management</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-ink transition-colors" href="#"
+                  >Transcription</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-ink transition-colors" href="#"
+                  >B2B Leads</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-ink transition-colors" href="#"
+                  >Translation</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-6 text-ink">Contact</h4>
+            <ul class="space-y-4 text-sm text-primary/90">
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-symbols-outlined text-primary/40 text-sm mt-1"
+                  >location_on</span
+                >
+                1201 Digital Plaza, Suite 400<br />San Francisco, CA 94103
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary/40 text-sm"
+                  >mail</span
+                >
+                hello@infixx.services
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary/40 text-sm"
+                  >phone</span
+                >
+                +1 (800) 555-DATA
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-primary/10 pt-10 flex flex-col justify-between items-center gap-6"
+        >
+          <p
+            class="text-xs text-primary/50 uppercase tracking-widest font-medium"
+          >
+            © 2026 INFIXX Services. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

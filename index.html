@@ -104,12 +104,12 @@
 
           <!-- CTA + Mobile Menu Button -->
           <div class="flex items-center gap-3">
-            <a 
+            <a
               href="#contact"
               class="hidden md:flex items-center justify-center rounded-xl h-10 px-5 bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-all shadow-soft"
             >
               Contact Us
-          </a>
+            </a>
 
             <button
               id="mobileMenuBtn"
@@ -184,11 +184,12 @@
             >
 
             <div class="pt-2">
-              <a href="#contact"
+              <a
+                href="#contact"
                 class="w-full block text-center py-4 rounded-xl bg-primary text-white font-bold text-sm hover:bg-primary/90 transition shadow-soft"
               >
                 Contact Us
-            </a>
+              </a>
             </div>
           </div>
         </div>
@@ -243,14 +244,11 @@
               <!-- Responsive Buttons -->
               <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <button
+                  type="button"
+                  data-modal-open="quoteModal"
                   class="w-full sm:w-auto px-8 py-4 bg-primary text-white font-bold rounded-xl hover:shadow-glow hover:-translate-y-0.5 transition-all ring-1 ring-black/5"
                 >
                   Get a Quote
-                </button>
-                <button
-                  class="w-full sm:w-auto px-8 py-4 bg-white border border-line text-ink font-bold rounded-xl hover:bg-primary/5 transition-all"
-                >
-                  Explore Services
                 </button>
               </div>
 
@@ -393,189 +391,196 @@
             <div
               class="service-card p-8 bg-background-light rounded-2xl border border-transparent hover:border-primary/10 hover:bg-white hover:shadow-xl transition-all group"
             >
-            <a href="service-details.html">
-              <div
-                class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform"
-              >
-                <span class="material-symbols-outlined">keyboard</span>
-              </div>
-              <h3 class="text-xl font-bold mb-3">Manual Typing</h3>
-              <p class="text-sm text-primary/60 mb-6 leading-relaxed">
-                Fast, accurate transcription of handwritten or printed documents
-                into digital formats.
-              </p>
+              <a href="service-details.html">
+                <div
+                  class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform"
+                >
+                  <span class="material-symbols-outlined">keyboard</span>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Manual Typing</h3>
+                <p class="text-sm text-primary/60 mb-6 leading-relaxed">
+                  Fast, accurate transcription of handwritten or printed
+                  documents into digital formats.
+                </p>
               </a>
-              <a
+              <button
+                type="button"
+                data-modal-open="quoteModal"
                 class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary hover:gap-3 gap-2 transition-all"
-                href="#"
               >
                 Request Quote
                 <span class="material-symbols-outlined text-sm"
                   >arrow_forward</span
                 >
-              </a>
+              </button>
             </div>
 
             <!-- Service 2 -->
             <div
               class="service-card p-8 bg-background-light rounded-2xl border border-transparent hover:border-primary/10 hover:bg-white hover:shadow-xl transition-all group"
             >
-            <a href="service-details.html">
-                            <div
-                class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform"
-              >
-                <span class="material-symbols-outlined">sync_alt</span>
-              </div>
-              <h3 class="text-xl font-bold mb-3">File Conversion</h3>
-              <p class="text-sm text-primary/60 mb-6 leading-relaxed">
-                Seamlessly transform files between formats (PDF, Excel, XML,
-                JSON) without data loss.
-              </p>
-            </a>
-              <a
+              <a href="service-details.html">
+                <div
+                  class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform"
+                >
+                  <span class="material-symbols-outlined">sync_alt</span>
+                </div>
+                <h3 class="text-xl font-bold mb-3">File Conversion</h3>
+                <p class="text-sm text-primary/60 mb-6 leading-relaxed">
+                  Seamlessly transform files between formats (PDF, Excel, XML,
+                  JSON) without data loss.
+                </p>
+              </a>
+              <button
+                type="button"
+                data-modal-open="quoteModal"
                 class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary hover:gap-3 gap-2 transition-all"
-                href="#"
               >
                 Request Quote
                 <span class="material-symbols-outlined text-sm"
                   >arrow_forward</span
                 >
-              </a>
+              </button>
             </div>
 
             <!-- Service 3 -->
             <div
               class="service-card p-8 bg-background-light rounded-2xl border border-transparent hover:border-primary/10 hover:bg-white hover:shadow-xl transition-all group"
             >
-            <a href="service-details.html">
-                            <div
-                class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform"
-              >
-                <span class="material-symbols-outlined">database</span>
-              </div>
-              <h3 class="text-xl font-bold mb-3">Data Entry</h3>
-              <p class="text-sm text-primary/60 mb-6 leading-relaxed">
-                Accurate data management for inventory, records, and
-                administrative databases.
-              </p>
-            </a>
-              <a
+              <a href="service-details.html">
+                <div
+                  class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform"
+                >
+                  <span class="material-symbols-outlined">database</span>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Data Entry</h3>
+                <p class="text-sm text-primary/60 mb-6 leading-relaxed">
+                  Accurate data management for inventory, records, and
+                  administrative databases.
+                </p>
+              </a>
+              <button
+                type="button"
+                data-modal-open="quoteModal"
                 class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary hover:gap-3 gap-2 transition-all"
-                href="#"
               >
                 Request Quote
                 <span class="material-symbols-outlined text-sm"
                   >arrow_forward</span
                 >
-              </a>
+              </button>
             </div>
 
             <!-- Service 4 -->
             <div
               class="service-card p-8 bg-background-light rounded-2xl border border-transparent hover:border-primary/10 hover:bg-white hover:shadow-xl transition-all group"
             >
-            <a href="service-details.html">
-                            <div
-                class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform"
-              >
-                <span class="material-symbols-outlined">audio_file</span>
-              </div>
-              <h3 class="text-xl font-bold mb-3">Transcription</h3>
-              <p class="text-sm text-primary/60 mb-6 leading-relaxed">
-                High-fidelity audio-to-text conversion for legal, medical, and
-                corporate meetings.
-              </p>
-            </a>
-              <a
+              <a href="service-details.html">
+                <div
+                  class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform"
+                >
+                  <span class="material-symbols-outlined">audio_file</span>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Transcription</h3>
+                <p class="text-sm text-primary/60 mb-6 leading-relaxed">
+                  High-fidelity audio-to-text conversion for legal, medical, and
+                  corporate meetings.
+                </p>
+              </a>
+              <button
+                type="button"
+                data-modal-open="quoteModal"
                 class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary hover:gap-3 gap-2 transition-all"
-                href="#"
               >
                 Request Quote
                 <span class="material-symbols-outlined text-sm"
                   >arrow_forward</span
                 >
-              </a>
+              </button>
             </div>
 
             <!-- Service 5 -->
             <div
               class="service-card p-8 bg-background-light rounded-2xl border border-transparent hover:border-primary/10 hover:bg-white hover:shadow-xl transition-all group"
             >
-            <a href="service-details.html">
-                            <div
-                class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform"
-              >
-                <span class="material-symbols-outlined">translate</span>
-              </div>
-              <h3 class="text-xl font-bold mb-3">Translation</h3>
-              <p class="text-sm text-primary/60 mb-6 leading-relaxed">
-                Multi-lingual document translation with cultural nuance and
-                technical accuracy.
-              </p>
-            </a>
-              <a
+              <a href="service-details.html">
+                <div
+                  class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform"
+                >
+                  <span class="material-symbols-outlined">translate</span>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Translation</h3>
+                <p class="text-sm text-primary/60 mb-6 leading-relaxed">
+                  Multi-lingual document translation with cultural nuance and
+                  technical accuracy.
+                </p>
+              </a>
+              <button
+                type="button"
+                data-modal-open="quoteModal"
                 class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary hover:gap-3 gap-2 transition-all"
-                href="#"
               >
                 Request Quote
                 <span class="material-symbols-outlined text-sm"
                   >arrow_forward</span
                 >
-              </a>
+              </button>
             </div>
 
             <!-- Service 6 -->
             <div
               class="service-card p-8 bg-background-light rounded-2xl border border-transparent hover:border-primary/10 hover:bg-white hover:shadow-xl transition-all group"
             >
-            <a href="service-details.html">
-                           <div
-                class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform"
-              >
-                <span class="material-symbols-outlined">person_add</span>
-              </div>
-              <h3 class="text-xl font-bold mb-3">Lead Generation</h3>
-              <p class="text-sm text-primary/60 mb-6 leading-relaxed">
-                Curated B2B lead lists targeting your ideal customer profile
-                with validated data.
-              </p>
-            </a>
-              <a
+              <a href="service-details.html">
+                <div
+                  class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform"
+                >
+                  <span class="material-symbols-outlined">person_add</span>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Lead Generation</h3>
+                <p class="text-sm text-primary/60 mb-6 leading-relaxed">
+                  Curated B2B lead lists targeting your ideal customer profile
+                  with validated data.
+                </p>
+              </a>
+              <button
+                type="button"
+                data-modal-open="quoteModal"
                 class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary hover:gap-3 gap-2 transition-all"
-                href="#"
               >
                 Request Quote
                 <span class="material-symbols-outlined text-sm"
                   >arrow_forward</span
                 >
-              </a>
+              </button>
             </div>
 
             <!-- Service 7 -->
             <div
               class="service-card p-8 bg-background-light rounded-2xl border border-transparent hover:border-primary/10 hover:bg-white hover:shadow-xl transition-all group"
             >
-            <a href="service-details.html">
-                            <div
-                class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform"
-              >
-                <span class="material-symbols-outlined">mail</span>
-              </div>
-              <h3 class="text-xl font-bold mb-3">Email Marketing</h3>
-              <p class="text-sm text-primary/60 mb-6 leading-relaxed">
-                Strategic campaign management focused on deliverability and high
-                conversion.
-              </p>
-            </a>
-              <a
+              <a href="service-details.html">
+                <div
+                  class="service-icon w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 transition-transform"
+                >
+                  <span class="material-symbols-outlined">mail</span>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Email Marketing</h3>
+                <p class="text-sm text-primary/60 mb-6 leading-relaxed">
+                  Strategic campaign management focused on deliverability and
+                  high conversion.
+                </p>
+              </a>
+              <button
+                type="button"
+                data-modal-open="quoteModal"
                 class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary hover:gap-3 gap-2 transition-all"
-                href="#"
               >
                 Request Quote
                 <span class="material-symbols-outlined text-sm"
                   >arrow_forward</span
                 >
-              </a>
+              </button>
             </div>
 
             <!-- Service 8 -->
@@ -594,6 +599,8 @@
                 We build bespoke workflows for unique data challenges.
               </p>
               <button
+                type="button"
+                data-modal-open="quoteModal"
                 class="w-full py-3 bg-white text-primary font-bold rounded-lg hover:bg-white/90 transition-all"
               >
                 Talk to Expert
@@ -602,6 +609,195 @@
           </div>
         </div>
       </section>
+
+      <!-- quote modal code  -->
+      <div
+        id="quoteModal"
+        class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/60 backdrop-blur-md p-4"
+        aria-hidden="true"
+      >
+        <!-- Modal Container (animation layer) -->
+        <div
+          id="quoteModalPanel"
+          class="relative w-full max-w-[580px] transform transition-all duration-300 ease-out opacity-0 scale-95"
+          role="dialog"
+          aria-modal="true"
+        >
+          <!-- Modal Container (YOUR ORIGINAL STYLE) -->
+          <div
+            class="relative w-full max-w-[580px] bg-white dark:bg-background-dark rounded-xl shadow-2xl flex flex-col max-h-[90vh] overflow-hidden"
+          >
+            <!-- Header -->
+            <div
+              class="flex items-center justify-between px-8 py-6 border-b border-slate-100 dark:border-slate-800"
+            >
+              <div>
+                <h2
+                  class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-slate-100 tracking-tight"
+                >
+                  Get a Free Quote
+                </h2>
+                <p class="text-sm text-slate-500 mt-1">
+                  Please provide details of your project.
+                </p>
+              </div>
+
+              <!-- ✅ CLOSE BUTTON -->
+              <button
+                type="button"
+                data-modal-close
+                class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors text-slate-400 hover:text-slate-900 dark:hover:text-slate-100"
+              >
+                <span class="material-symbols-outlined text-[24px]">close</span>
+              </button>
+            </div>
+
+            <!-- Form Content (Scrollable) -->
+            <div class="flex-1 overflow-y-auto custom-scrollbar px-8 py-6">
+              <form class="space-y-6">
+                <!-- Name & Email Row -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="space-y-1 sm:space-y-2">
+                    <label
+                      class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                      >Full Name</label
+                    >
+                    <input
+                      class="w-full h-10 sm:h-12 rounded-lg border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 focus:ring-primary focus:border-primary text-slate-900 dark:text-slate-100 transition-all placeholder:text-slate-400"
+                      placeholder="Jane Doe"
+                      type="text"
+                    />
+                  </div>
+
+                  <div class="space-y-1 sm:space-y-2">
+                    <label
+                      class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                      >Email Address</label
+                    >
+                    <input
+                      class="w-full h-10 sm:h-12 rounded-lg border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 focus:ring-primary focus:border-primary text-slate-900 dark:text-slate-100 transition-all placeholder:text-slate-400"
+                      placeholder="jane@example.com"
+                      type="email"
+                    />
+                  </div>
+                </div>
+
+                <!-- Service Dropdown -->
+                <div class="space-y-1 sm:space-y-2">
+                  <label
+                    class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                    >Service Needed</label
+                  >
+                  <div class="relative">
+                    <select
+                      class="w-full h-10 sm:h-12 appearance-none rounded-lg border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 focus:ring-primary focus:border-primary text-slate-900 dark:text-slate-100 px-4 transition-all cursor-pointer"
+                    >
+                      <option disabled="" selected="" value="">
+                        Select a service...
+                      </option>
+                      <option value="architectural">
+                        Architectural Design
+                      </option>
+                      <option value="interior">Interior Styling</option>
+                      <option value="consultation">Project Consultation</option>
+                      <option value="renovation">Renovation Planning</option>
+                    </select>
+
+                    <div
+                      class="absolute inset-y-0 right-3 flex items-center pointer-events-none text-slate-400"
+                    >
+                      <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project Details -->
+                <div class="space-y-1 sm:space-y-2">
+                  <label
+                    class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                    >Project Details</label
+                  >
+                  <textarea
+                    class="w-full rounded-lg border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 focus:ring-primary focus:border-primary text-slate-900 dark:text-slate-100 p-4 transition-all placeholder:text-slate-400 resize-none"
+                    placeholder="Describe your requirements..."
+                    rows="3"
+                  ></textarea>
+                </div>
+
+                <!-- File Upload -->
+                <div class="space-y-1 sm:space-y-2">
+                  <label
+                    class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                    >Attach Project Files</label
+                  >
+                  <label
+                    class="border-2 border-dashed border-slate-200 dark:border-slate-800 rounded-xl p-8 flex flex-col items-center justify-center bg-slate-50/50 dark:bg-slate-900/20 hover:bg-slate-100 dark:hover:bg-slate-900/40 transition-colors cursor-pointer group"
+                  >
+                    <div
+                      class="w-12 h-5 sm:h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform"
+                    >
+                      <span class="material-symbols-outlined text-primary"
+                        >cloud_upload</span
+                      >
+                    </div>
+                    <p
+                      class="text-sm text-slate-900 dark:text-slate-100 font-medium"
+                    >
+                      Click to upload or drag and drop
+                    </p>
+                    <p class="text-xs text-slate-500 mt-1">
+                      PDF, JPG, PNG or DWG (max. 10MB)
+                    </p>
+                    <input class="hidden" type="file" />
+                  </label>
+                </div>
+
+                <!-- Urgent Checkbox -->
+                <div class="flex items-center gap-3 py-2">
+                  <input
+                    class="w-5 h-5 rounded border-slate-300 text-primary focus:ring-primary/50 transition-all cursor-pointer"
+                    id="urgent"
+                    type="checkbox"
+                  />
+                  <label
+                    class="text-sm font-medium text-slate-700 dark:text-slate-300 cursor-pointer select-none"
+                    for="urgent"
+                    >This is an urgent project</label
+                  >
+                </div>
+              </form>
+            </div>
+
+            <!-- Footer & Submit -->
+            <div
+              class="px-8 py-6 border-t border-slate-100 dark:border-slate-800 space-y-4"
+            >
+              <button
+                class="w-full h-12 sm:h-14 bg-primary text-white rounded-lg font-bold text-base sm:text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 active:scale-[0.98] flex items-center justify-center gap-2"
+                type="button"
+              >
+                Submit Quote
+                <span class="material-symbols-outlined text-[20px]">send</span>
+              </button>
+
+              <div class="flex flex-col items-center gap-2">
+                <p class="text-sm text-slate-500">
+                  contact us via
+                  <a
+                    class="text-primary font-semibold hover:underline decoration-primary/30 underline-offset-4 inline-flex items-center gap-1 ml-1"
+                    href="#"
+                  >
+                    WhatsApp
+                    <span class="material-symbols-outlined text-[16px]"
+                      >chat_bubble</span
+                    >
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Workflow (Redesigned, text unchanged) -->
       <section class="py-10 sm:py-24 bg-background-light" id="how-it-works">
@@ -1061,7 +1257,9 @@
               >
                 Let's Start a <br />Conversation
               </h2>
-              <p class="text-base md:text-lg text-primary/60 mb-12 leading-relaxed max-w-md">
+              <p
+                class="text-base md:text-lg text-primary/60 mb-12 leading-relaxed max-w-md"
+              >
                 Whether you're looking to scale your data operations or need a
                 custom technical solution, our experts are ready to partner with
                 you.
@@ -1194,6 +1392,204 @@
           </div>
         </div>
       </section>
+      <!-- blog section  -->
+      <section class="py-24 bg-white" id="blog">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6"
+          >
+            <div class="max-w-2xl">
+              <h2
+                class="text-3xl lg:text-4xl font-black text-primary mb-4 tracking-tight"
+              >
+                Latest Blogs
+              </h2>
+              <p class="text-primary/60">
+                Expert perspectives on data management, digital transformation,
+                and industry trends.
+              </p>
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="swiper-prev-btn w-12 h-12 rounded-full border border-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
+              >
+                <span class="material-symbols-outlined">arrow_back</span>
+              </button>
+              <button
+                class="swiper-next-btn w-12 h-12 rounded-full border border-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
+              >
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+          <div class="swiper blog-swiper pb-12">
+            <div class="swiper-wrapper">
+              <!-- Blog Post 1 -->
+              <div class="swiper-slide h-auto">
+                <div
+                  class="group bg-background-light rounded-2xl overflow-hidden border border-transparent hover:border-primary/10 hover:bg-white hover:shadow-xl transition-all h-full flex flex-col"
+                >
+                  <div class="aspect-video overflow-hidden">
+                    <img
+                      alt="Data Analytics"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      src="image/blog1.png"
+                    />
+                  </div>
+                  <div class="p-6 flex-1 flex flex-col">
+                    <span
+                      class="inline-block px-3 py-1 rounded-full bg-[#36373a] text-white text-[10px] font-bold uppercase tracking-widest mb-4 w-fit"
+                      >Data Strategy</span
+                    >
+                    <h3 class="text-xl font-bold text-primary mb-3">
+                      Maximizing ROI with Clean Data Architecture
+                    </h3>
+                    <p class="text-sm text-primary/60 mb-6 line-clamp-2">
+                      How enterprise leaders are restructuring their data
+                      pipelines to drive 30% more efficiency in decision-making.
+                    </p>
+                    <div class="mt-auto">
+                      <a
+                        class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary group/link"
+                        href="blog-details.html"
+                      >
+                        Read More
+                        <span
+                          class="material-symbols-outlined text-sm ml-2 group-hover/link:translate-x-1 transition-transform"
+                          >arrow_forward</span
+                        >
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Blog Post 2 -->
+              <div class="swiper-slide h-auto">
+                <div
+                  class="group bg-background-light rounded-2xl overflow-hidden border border-transparent hover:border-primary/10 hover:bg-white hover:shadow-xl transition-all h-full flex flex-col"
+                >
+                  <div class="aspect-video overflow-hidden">
+                    <img
+                      alt="Cybersecurity"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      src="image/blog2.png"
+                    />
+                  </div>
+                  <div class="p-6 flex-1 flex flex-col">
+                    <span
+                      class="inline-block px-3 py-1 rounded-full bg-[#36373a] text-white text-[10px] font-bold uppercase tracking-widest mb-4 w-fit"
+                      >Security</span
+                    >
+                    <h3 class="text-xl font-bold text-primary mb-3">
+                      Securing Sensitive Data in Hybrid Workflows
+                    </h3>
+                    <p class="text-sm text-primary/60 mb-6 line-clamp-2">
+                      Essential security protocols for managing distributed data
+                      transformation teams without compromising safety.
+                    </p>
+                    <div class="mt-auto">
+                      <a
+                        class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary group/link"
+                        href="blog-details.html"
+                      >
+                        Read More
+                        <span
+                          class="material-symbols-outlined text-sm ml-2 group-hover/link:translate-x-1 transition-transform"
+                          >arrow_forward</span
+                        >
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Blog Post 3 -->
+              <div class="swiper-slide h-auto">
+                <div
+                  class="group bg-background-light rounded-2xl overflow-hidden border border-transparent hover:border-primary/10 hover:bg-white hover:shadow-xl transition-all h-full flex flex-col"
+                >
+                  <div class="aspect-video overflow-hidden">
+                    <img
+                      alt="Lead Gen"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      src="image/blog3.png"
+                    />
+                  </div>
+                  <div class="p-6 flex-1 flex flex-col">
+                    <span
+                      class="inline-block px-3 py-1 rounded-full bg-[#36373a] text-white text-[10px] font-bold uppercase tracking-widest mb-4 w-fit"
+                      >Lead Gen</span
+                    >
+                    <h3 class="text-xl font-bold text-primary mb-3">
+                      B2B Lead Generation: Quality over Quantity
+                    </h3>
+                    <p class="text-sm text-primary/60 mb-6 line-clamp-2">
+                      Why verified data points are more valuable than large
+                      databases in modern enterprise sales cycles.
+                    </p>
+                    <div class="mt-auto">
+                      <a
+                        class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary group/link"
+                        href="blog-details.html"
+                      >
+                        Read More
+                        <span
+                          class="material-symbols-outlined text-sm ml-2 group-hover/link:translate-x-1 transition-transform"
+                          >arrow_forward</span
+                        >
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Blog Post 4 -->
+              <div class="swiper-slide h-auto">
+                <div
+                  class="group bg-background-light rounded-2xl overflow-hidden border border-transparent hover:border-primary/10 hover:bg-white hover:shadow-xl transition-all h-full flex flex-col"
+                >
+                  <div class="aspect-video overflow-hidden">
+                    <img
+                      alt="Data Analytics"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      src="image/blog1.png"
+                    />
+                  </div>
+                  <div class="p-6 flex-1 flex flex-col">
+                    <span
+                      class="inline-block px-3 py-1 rounded-full bg-[#36373a] text-white text-[10px] font-bold uppercase tracking-widest mb-4 w-fit"
+                      >Data Strategy</span
+                    >
+                    <h3 class="text-xl font-bold text-primary mb-3">
+                      Maximizing ROI with Clean Data Architecture
+                    </h3>
+                    <p class="text-sm text-primary/60 mb-6 line-clamp-2">
+                      How enterprise leaders are restructuring their data
+                      pipelines to drive 30% more efficiency in decision-making.
+                    </p>
+                    <div class="mt-auto">
+                      <a
+                        class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary group/link"
+                        href="blog-details.html"
+                      >
+                        Read More
+                        <span
+                          class="material-symbols-outlined text-sm ml-2 group-hover/link:translate-x-1 transition-transform"
+                          >arrow_forward</span
+                        >
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination !bottom-0"></div>
+          </div>
+        </div>
+        <style>
+          .blog-swiper .swiper-pagination-bullet-active {
+            background: #36373a !important;
+          }
+        </style>
+      </section>
       <!-- Footer (BG upgraded) -->
       <footer
         class="pt-20 pb-10 border-t border-primary/5 relative overflow-hidden"
@@ -1223,16 +1619,35 @@
                 Empowering modern industries with precision data management and
                 high-fidelity document transformation services.
               </p>
+              <div class="flex gap-3 mt-6">
+                <a
+                  class="size-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-black/20 transition-colors"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-lg">public</span>
+                </a>
+                <a
+                  class="size-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-black/20 transition-colors"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-lg"
+                    >thumb_up</span
+                  >
+                </a>
+                <a
+                  class="size-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-black/20 transition-colors"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-lg"
+                    >smart_display</span
+                  >
+                </a>
+              </div>
             </div>
 
             <div>
               <h4 class="font-bold mb-6 text-ink">Quick Links</h4>
               <ul class="space-y-4 text-sm text-primary/70">
-                <li>
-                  <a class="hover:text-ink transition-colors" href="#"
-                    >About Us</a
-                  >
-                </li>
                 <li>
                   <a class="hover:text-ink transition-colors" href="#services"
                     >Our Services</a
@@ -1246,8 +1661,18 @@
                   >
                 </li>
                 <li>
-                  <a class="hover:text-ink transition-colors" href="#"
-                    >Case Studies</a
+                  <a class="hover:text-ink transition-colors" href="privacy-policy.html"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-ink transition-colors" href="refund-policy.html"
+                    >Refund Policy</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-ink transition-colors" href="#blog"
+                    >Blog</a
                   >
                 </li>
               </ul>
@@ -1308,38 +1733,19 @@
           </div>
 
           <div
-            class="border-t border-primary/10 pt-10 flex flex-col md:flex-row justify-between items-center gap-6"
+            class="border-t border-primary/10 pt-10 flex flex-col justify-between items-center gap-6"
           >
             <p
               class="text-xs text-primary/50 uppercase tracking-widest font-medium"
             >
-              © 2024 INFIXX Services. All rights reserved.
-              <a href="https://webnion.com" class="font-bold text-black"
-                >Developed by webnion</a
-              >
+              © 2026 INFIXX Services. All rights reserved.
             </p>
-            <div class="flex gap-6 text-primary/50 items-center">
-              <a class="hover:text-ink transition-colors" href="#"
-                ><span class="material-symbols-outlined text-xl"
-                  >language</span
-                ></a
-              >
-              <a
-                class="hover:text-ink transition-colors text-xs font-bold uppercase"
-                href="#"
-                >Privacy Policy</a
-              >
-              <a
-                class="hover:text-ink transition-colors text-xs font-bold uppercase"
-                href="#"
-                >Terms of Service</a
-              >
-            </div>
           </div>
         </div>
       </footer>
     </main>
-
     <script src="js/index.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

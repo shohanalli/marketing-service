@@ -1,0 +1,615 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>INFIXX | Professional Data Services</title>
+    <meta
+      content="High-end digital services tailored for industry leaders. Streamline your workflow with our expert document and data solutions."
+      name="description"
+    />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/global.js"></script>
+  </head>
+
+  <body class="bg-background-light text-primary font-display antialiased">
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 h-full border-b border-line glass-effect">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <!-- Logo (Responsive) -->
+          <a href="#" class="flex items-center shrink-0">
+            <img
+              src="image/logo.png"
+              alt="INFIXX Logo"
+              class="h-8 sm:h-10 md:h-12 lg:h-14 w-auto max-w-[160px] sm:max-w-[200px] object-contain"
+            />
+          </a>
+
+          <!-- Navigation (Desktop) -->
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              class="text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+              href="index.html"
+              >Home</a
+            >
+            <div class="relative group">
+              <button
+                class="flex items-center gap-1 text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+                type="button"
+              >
+                Services
+                <span class="material-symbols-outlined text-sm"
+                  >expand_more</span
+                >
+              </button>
+              <!-- Dropdown -->
+              <div
+                class="absolute top-full left-0 w-64 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
+              >
+                <div
+                  class="bg-white border border-line rounded-2xl shadow-soft p-3 grid gap-1"
+                >
+                  <a
+                    class="p-2.5 hover:bg-primary/5 rounded-xl text-sm font-medium"
+                    href="index.html#services"
+                    >Data Management</a
+                  >
+                  <a
+                    class="p-2.5 hover:bg-primary/5 rounded-xl text-sm font-medium"
+                    href="index.html#services"
+                    >Digital Marketing</a
+                  >
+                  <a
+                    class="p-2.5 hover:bg-primary/5 rounded-xl text-sm font-medium"
+                    href="index.html#services"
+                    >Creative Solutions</a
+                  >
+                </div>
+              </div>
+            </div>
+            <a
+              class="text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+              href="index.html#how-it-works"
+              >Process</a
+            >
+            <a
+              class="text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+              href="index.html#faq"
+              >FAQ</a
+            >
+          </nav>
+
+          <!-- CTA + Mobile Menu Button -->
+          <div class="flex items-center gap-3">
+            <a
+              href="index.html#contact"
+              class="hidden md:flex items-center justify-center rounded-xl h-10 px-5 bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-all shadow-soft"
+            >
+              Contact Us
+            </a>
+
+            <button
+              id="mobileMenuBtn"
+              class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-line bg-white hover:bg-primary/5 transition"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobileMenuPanel"
+            >
+              <span class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+
+        <div
+          id="mobileMenuPanel"
+          class="menu-panel hidden md:hidden pb-5"
+          role="dialog"
+          aria-label="Mobile Menu"
+        >
+          <div class="bg-white border border-line rounded-2xl shadow-soft p-3">
+            <div class="flex items-center justify-between px-1 pb-2">
+              <span class="text-sm font-bold text-ink/80">Menu</span>
+
+              <button
+                type="button"
+                class="inline-flex items-center justify-center w-10 h-10 rounded-xl border border-line hover:bg-primary/5 transition"
+                aria-label="Close menu"
+                data-menu-close
+              >
+                <span class="material-symbols-outlined text-2xl">close</span>
+              </button>
+            </div>
+
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html"
+              >Home</a
+            >
+
+            <div
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+            >
+              Services
+            </div>
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#services"
+              >Data Management</a
+            >
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#services"
+              >Digital Marketing</a
+            >
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#services"
+              >Creative Solutions</a
+            >
+
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#how-it-works"
+              >Process</a
+            >
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#faq"
+              >FAQ</a
+            >
+
+            <div class="pt-2">
+              <a
+                href="index.html#contact"
+                class="w-full h-11 rounded-xl bg-primary text-white font-bold text-sm hover:bg-primary/90 transition shadow-soft"
+              >
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- Breadcrumbs -->
+      <nav
+        class="flex items-center gap-2 text-sm font-medium text-slate-500 mb-8"
+      >
+        <a class="hover:text-primary transition-colors" href="#">Home</a>
+        <span class="material-symbols-outlined text-xs">chevron_right</span>
+        <span class="text-primary dark:text-slate-200">Privacy Policy</span>
+      </nav>
+      <!-- Header Hero -->
+      <div
+        class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 border-b border-slate-200 dark:border-slate-800 pb-12"
+      >
+        <div class="max-w-2xl">
+          <h1
+            class="text-4xl md:text-5xl font-black tracking-tight text-primary dark:text-white mb-4"
+          >
+            Privacy Policy
+          </h1>
+          <p class="text-lg text-slate-600 dark:text-slate-400">
+            Your privacy is important to us. This policy outlines how INFIXX
+            collects, uses, and protects your personal data when you use our
+            digital services.
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col lg:flex-row gap-12">
+        <!-- Sidebar Navigation -->
+        <aside class="lg:w-64 flex-shrink-0">
+          <nav class="sticky top-28 space-y-1">
+            <p
+              class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4 px-3"
+            >
+              On this page
+            </p>
+            <a
+              class="block px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              href="#introduction"
+              >Introduction</a
+            >
+            <a
+              class="block px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              href="#data-collection"
+              >Data Collection</a
+            >
+            <a
+              class="block px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              href="#usage"
+              >How We Use Data</a
+            >
+            <a
+              class="block px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              href="#cookies"
+              >Cookies &amp; Tracking</a
+            >
+            <a
+              class="block px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              href="#third-party"
+              >Third-Party Disclosure</a
+            >
+            <a
+              class="block px-3 py-2 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              href="#contact"
+              >Contact Information</a
+            >
+          </nav>
+        </aside>
+        <!-- Policy Content -->
+        <article class="flex-1 max-w-3xl prose dark:prose-invert">
+          <section id="introduction">
+            <h2 class="text-2xl font-bold text-primary dark:text-white">
+              1. Introduction
+            </h2>
+            <p>
+              Welcome to INFIXX. We are committed to protecting your personal
+              information and your right to privacy. If you have any questions
+              or concerns about our policy or our practices with regards to your
+              personal information, please contact us at privacy@infixx.com.
+            </p>
+            <p>
+              When you visit our website and use our services, you trust us with
+              your personal information. We take your privacy very seriously. In
+              this privacy notice, we describe our privacy policy. We seek to
+              explain to you in the clearest way possible what information we
+              collect, how we use it, and what rights you have in relation to
+              it.
+            </p>
+          </section>
+          <section id="data-collection">
+            <h2 class="text-2xl font-bold text-primary dark:text-white">
+              2. Data Collection
+            </h2>
+            <p>
+              We collect personal information that you voluntarily provide to us
+              when expressing an interest in obtaining information about us or
+              our products and services, when participating in activities on the
+              Services or otherwise contacting us.
+            </p>
+            <div
+              class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm mb-6"
+            >
+              <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary"
+                  >person</span
+                >
+                Types of Data Collected
+              </h3>
+              <ul
+                class="list-disc pl-5 space-y-2 text-slate-600 dark:text-slate-400 text-sm"
+              >
+                <li>
+                  <strong>Personal Identification:</strong> Name, email address,
+                  phone number, and mailing address.
+                </li>
+                <li>
+                  <strong>Professional Data:</strong> Job title, company name,
+                  and industry.
+                </li>
+                <li>
+                  <strong>Technical Data:</strong> IP addresses, browser type,
+                  and device information collected through cookies.
+                </li>
+                <li>
+                  <strong>Usage Data:</strong> Information about how you
+                  navigate our website and use our digital tools.
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section id="usage">
+            <h2 class="text-2xl font-bold text-primary dark:text-white">
+              3. How We Use Data
+            </h2>
+            <p>
+              We use personal information collected via our Services for a
+              variety of business purposes described below. We process your
+              personal information for these purposes in reliance on our
+              legitimate business interests, in order to enter into or perform a
+              contract with you, with your consent, and/or for compliance with
+              our legal obligations.
+            </p>
+            <p>Specifically, we use the information we collect or receive:</p>
+            <ul
+              class="list-disc pl-5 space-y-2 text-slate-600 dark:text-slate-400"
+            >
+              <li>To facilitate account creation and logon process.</li>
+              <li>
+                To send you marketing and promotional communications (you can
+                opt-out at any time).
+              </li>
+              <li>
+                To deliver targeted advertising to you based on your interests.
+              </li>
+              <li>To fulfill and manage your orders or service requests.</li>
+              <li>To respond to user inquiries and offer support.</li>
+            </ul>
+          </section>
+          <section id="cookies">
+            <h2 class="text-2xl font-bold text-primary dark:text-white">
+              4. Cookies &amp; Tracking
+            </h2>
+            <p>
+              We may use cookies and similar tracking technologies (like web
+              beacons and pixels) to access or store information. Specific
+              information about how we use such technologies and how you can
+              refuse certain cookies is set out in our Cookie Policy.
+            </p>
+            <div
+              class="p-4 bg-primary/5 border-l-4 border-primary rounded-r-lg"
+            >
+              <p class="text-sm font-medium text-primary mb-0">
+                <strong>Note:</strong> Most web browsers are set to accept
+                cookies by default. If you prefer, you can usually choose to set
+                your browser to remove cookies and to reject cookies.
+              </p>
+            </div>
+          </section>
+          <section id="third-party">
+            <h2 class="text-2xl font-bold text-primary dark:text-white">
+              5. Third-Party Disclosure
+            </h2>
+            <p>
+              We only share information with your consent, to comply with laws,
+              to provide you with services, to protect your rights, or to
+              fulfill business obligations.
+            </p>
+            <p>
+              We may process or share data based on the following legal basis:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+              <div
+                class="p-4 rounded-lg border border-slate-200 dark:border-slate-800"
+              >
+                <h4 class="font-bold mb-2">Service Providers</h4>
+                <p class="text-xs text-slate-500">
+                  We may share your data with third-party vendors, service
+                  providers, contractors or agents who perform services for us
+                  or on our behalf.
+                </p>
+              </div>
+              <div
+                class="p-4 rounded-lg border border-slate-200 dark:border-slate-800"
+              >
+                <h4 class="font-bold mb-2">Legal Obligations</h4>
+                <p class="text-xs text-slate-500">
+                  We may disclose your information where we are legally required
+                  to do so in order to comply with applicable law or government
+                  requests.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="mb-20" id="contact">
+            <h2 class="text-2xl font-bold text-primary dark:text-white">
+              6. Contact Information
+            </h2>
+            <p>
+              If you have questions or comments about this policy, you may email
+              us at <strong>privacy@infixx.com</strong> or by post to:
+            </p>
+            <div
+              class="bg-primary text-white p-8 rounded-2xl shadow-xl mt-8 relative overflow-hidden"
+            >
+              <div class="relative z-10">
+                <h3 class="text-xl font-bold mb-4">INFIXX Global HQ</h3>
+                <div class="space-y-3 opacity-90">
+                  <div class="flex items-start gap-3">
+                    <span class="material-symbols-outlined text-white/70"
+                      >location_on</span
+                    >
+                    <span
+                      >123 Innovation Drive, Suite 400<br />San Francisco, CA
+                      94105, USA</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-white/70"
+                      >mail</span
+                    >
+                    <span>privacy@infixx.com</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-white/70"
+                      >phone</span
+                    >
+                    <span>+1 (555) 123-4567</span>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute -bottom-10 -right-10 opacity-10">
+                <span class="material-symbols-outlined text-[160px]"
+                  >shield_person</span
+                >
+              </div>
+            </div>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!-- Footer (BG upgraded) -->
+    <footer
+      class="pt-20 pb-10 border-t border-primary/5 relative overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-primary/5 to-primary/0"
+      ></div>
+      <div
+        class="absolute -top-24 -right-24 w-[26rem] h-[26rem] rounded-full bg-primary/10 blur-3xl"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16"
+        >
+          <div class="col-span-1 lg:col-span-1">
+            <div class="flex items-center gap-2 mb-6">
+              <a href="#" class="flex items-center shrink-0">
+                <img
+                  src="image/logo.png"
+                  alt="INFIXX Logo"
+                  class="h-6 md:h-8 lg:h-10 w-auto max-w-[160px] sm:max-w-[200px] object-contain"
+                />
+              </a>
+            </div>
+            <p class="text-sm text-primary/60 leading-relaxed">
+              Empowering modern industries with precision data management and
+              high-fidelity document transformation services.
+            </p>
+            <div class="flex gap-3 mt-6">
+              <a
+                class="size-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-black/20 transition-colors"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-lg">public</span>
+              </a>
+              <a
+                class="size-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-black/20 transition-colors"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-lg">thumb_up</span>
+              </a>
+              <a
+                class="size-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-black/20 transition-colors"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-lg"
+                  >smart_display</span
+                >
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-6 text-ink">Quick Links</h4>
+            <ul class="space-y-4 text-sm text-primary/70">
+              <li>
+                <a
+                  class="hover:text-ink transition-colors"
+                  href="index.html#services"
+                  >Our Services</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-ink transition-colors"
+                  href="index.html#how-it-works"
+                  >Process</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-ink transition-colors" href="privacy-policy.html"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-ink transition-colors" href="refund-policy.html"
+                  >Refund Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-ink transition-colors"
+                  href="index.html#blog"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-6 text-ink">Services</h4>
+            <ul class="space-y-4 text-sm text-primary/80">
+              <li>
+                <a class="hover:text-ink transition-colors" href="#"
+                  >Data Management</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-ink transition-colors" href="#"
+                  >Transcription</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-ink transition-colors" href="#"
+                  >B2B Leads</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-ink transition-colors" href="#"
+                  >Translation</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-6 text-ink">Contact</h4>
+            <ul class="space-y-4 text-sm text-primary/90">
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-symbols-outlined text-primary/40 text-sm mt-1"
+                  >location_on</span
+                >
+                1201 Digital Plaza, Suite 400<br />San Francisco, CA 94103
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary/40 text-sm"
+                  >mail</span
+                >
+                hello@infixx.services
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary/40 text-sm"
+                  >phone</span
+                >
+                +1 (800) 555-DATA
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-primary/10 pt-10 flex flex-col justify-between items-center gap-6"
+        >
+          <p
+            class="text-xs text-primary/50 uppercase tracking-widest font-medium"
+          >
+            © 2026 INFIXX Services. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

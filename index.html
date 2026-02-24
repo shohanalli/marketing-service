@@ -73,19 +73,40 @@
                   class="bg-white border border-line rounded-2xl shadow-soft p-3 grid gap-1"
                 >
                   <a
-                    class="p-2.5 hover:bg-primary/5 rounded-xl text-sm font-medium"
+                    class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
                     href="#services"
-                    >Data Management</a
+                    >Manual Typing</a
                   >
                   <a
-                    class="p-2.5 hover:bg-primary/5 rounded-xl text-sm font-medium"
+                    class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
                     href="#services"
-                    >Digital Marketing</a
+                    >File Conversion</a
                   >
                   <a
-                    class="p-2.5 hover:bg-primary/5 rounded-xl text-sm font-medium"
+                    class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
                     href="#services"
-                    >Creative Solutions</a
+                    >Data Entry</a
+                  >
+
+                  <a
+                    class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+                    href="#how-it-works"
+                    >Transcription</a
+                  >
+                  <a
+                    class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+                    href="#faq"
+                    >Translation</a
+                  >
+                  <a
+                    class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+                    href="#faq"
+                    >Lead Generation</a
+                  >
+                  <a
+                    class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+                    href="#faq"
+                    >Email Marketing</a
                   >
                 </div>
               </div>
@@ -159,30 +180,48 @@
             <a
               class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
               href="#services"
-              >Data Management</a
+              >Manual Typing</a
             >
             <a
               class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
               href="#services"
-              >Digital Marketing</a
+              >File Conversion</a
             >
             <a
               class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
               href="#services"
-              >Creative Solutions</a
+              >Data Entry</a
             >
 
             <a
               class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
               href="#how-it-works"
-              >Process</a
+              >Transcription</a
             >
             <a
               class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
               href="#faq"
-              >FAQ</a
+              >Translation</a
+            >
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="#faq"
+              >Lead Generation</a
+            >
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="#faq"
+              >Email Marketing</a
             >
 
+            <div class="pt-2">
+              <a
+                href="#how-it-works"
+                class="w-full block text-center py-4 rounded-xl bg-primary text-white font-bold text-sm hover:bg-primary/90 transition shadow-soft"
+              >
+                Process
+              </a>
+            </div>
             <div class="pt-2">
               <a
                 href="#contact"
@@ -230,7 +269,7 @@
                 class="text-[2.4rem] sm:text-5xl lg:text-6xl xl:text-7xl font-black leading-[1.07] tracking-tight mb-5"
               >
                 <span class="text-ink">Precision Document Transformation</span>
-                <span class="text-primary/70">&amp; Data Management Scale</span>
+                <span class="text-primary/70">&amp; Manual Typing Scale</span>
               </h1>
 
               <p
@@ -273,34 +312,80 @@
             </div>
 
             <!-- Image card now responsive (shows on mobile too) -->
-            <div class="relative">
+            <div class="relative group w-fit mx-auto">
+              <!-- IMAGE BOX -->
               <div
-                class="aspect-[4/3] sm:aspect-[16/10] lg:aspect-square bg-primary/5 rounded-3xl overflow-hidden shadow-glow transform lg:rotate-2 hover:rotate-0 transition-transform duration-500 ring-1 ring-black/5"
+                class="aspect-[4/3] sm:aspect-[16/10] lg:aspect-square bg-primary/5 rounded-3xl overflow-hidden shadow-glow cursor-pointer"
               >
-                <div
-                  class="w-full h-full bg-cover bg-center"
-                  data-alt="Modern office workspace with high-tech equipment"
-                  style="background-image: url(&quot;image/hero.png&quot;)"
-                ></div>
+                <img
+                  src="/image/hero.png"
+                  alt="Hero"
+                  class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                />
               </div>
 
+              <!-- OVERLAY DARK EFFECT -->
               <div
-                class="absolute -bottom-5 sm:-bottom-6 left-4 sm:left-6 bg-white/90 p-5 rounded-2xl shadow-soft max-w-xs border border-line backdrop-blur"
+                class="absolute inset-0 bg-black/40 opacity-0 cursor-pointer group-hover:opacity-100 transition duration-500 rounded-3xl"
+              ></div>
+
+              <!-- SERVICES AROUND IMAGE -->
+
+              <!-- TOP LEFT -->
+              <a
+                href="#services"
+                class="absolute -top-6 -left-12 opacity-0 rotate-45 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-500 bg-white px-4 py-2 rounded-xl text-sm font-semibold shadow-lg"
               >
-                <div class="flex gap-4 items-center">
-                  <div
-                    class="bg-green-100 text-green-600 p-2 rounded-xl ring-1 ring-black/5"
-                  >
-                    <span class="material-symbols-outlined">verified</span>
-                  </div>
-                  <div>
-                    <p class="font-extrabold text-ink">99.9% Accuracy</p>
-                    <p class="text-xs text-primary/60">
-                      Guaranteed quality control for every project.
-                    </p>
-                  </div>
-                </div>
-              </div>
+                Manual Typing
+              </a>
+
+              <!-- TOP RIGHT -->
+              <a
+                href="#services"
+                class="absolute -top-6 -right-6 opacity-0 rotate-45 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-500 bg-white px-4 py-2 rounded-xl text-sm font-semibold shadow-lg"
+              >
+                File Conversion
+              </a>
+
+              <!-- LEFT CENTER -->
+              <a
+                href="#services"
+                class="absolute top-1/2 -left-10 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-white px-4 py-2 rounded-xl text-sm font-semibold shadow-lg"
+              >
+                Data Entry
+              </a>
+
+              <!-- RIGHT CENTER -->
+              <a
+                href="#how-it-works"
+                class="absolute top-1/2 -right-10 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-white px-4 py-2 rounded-xl text-sm font-semibold shadow-lg"
+              >
+                Transcription
+              </a>
+
+              <!-- BOTTOM LEFT -->
+              <a
+                href="#faq"
+                class="absolute -bottom-6 -left-12 opacity-0 -rotate-45 group-hover:opacity-100 group-hover:translate-y-2 transition-all duration-500 bg-white px-4 py-2 rounded-xl text-sm font-semibold shadow-lg"
+              >
+                Translation
+              </a>
+
+              <!-- BOTTOM RIGHT -->
+              <a
+                href="#faq"
+                class="absolute -bottom-6 -right-6 opacity-0 rotate-45 group-hover:opacity-100 group-hover:translate-y-2 transition-all duration-500 bg-white px-4 py-2 rounded-xl text-sm font-semibold shadow-lg"
+              >
+                Lead Generation
+              </a>
+
+              <!-- BOTTOM CENTER -->
+              <a
+                href="#faq"
+                class="absolute -bottom-12 left-1/2 -translate-x-1/2 -rotate-90 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-white px-4 py-2 rounded-xl text-sm font-semibold shadow-lg"
+              >
+                Email Marketing
+              </a>
             </div>
           </div>
         </div>
@@ -322,7 +407,7 @@
             >
               <!-- Group 1 -->
               <div
-                class="flex items-center gap-8 sm:gap-12 lg:gap-16 pr-8 sm:pr-12 lg:pr-16"
+                class="flex items-center gap-8 sm:gap-12 lg:gap-16 pr-8 sm:pr-12 lg:pr-16 cursor-pointer"
               >
                 <img src="image/logo.png" alt="ACME" class="marquee-logo" />
                 <img
@@ -455,7 +540,7 @@
                 </div>
                 <h3 class="text-xl font-bold mb-3">Data Entry</h3>
                 <p class="text-sm text-primary/60 mb-6 leading-relaxed">
-                  Accurate data management for inventory, records, and
+                  Accurate Manual Typing for inventory, records, and
                   administrative databases.
                 </p>
               </a>
@@ -1109,7 +1194,7 @@
                 </div>
 
                 <div class="flex items-center justify-between mt-6">
-                  <div class="swiper-pagination !static"></div>
+                  
                   <div class="flex gap-2">
                     <button
                       class="swiper-button-prev !static !w-10 !h-10 !m-0 rounded-xl border border-line bg-white hover:bg-primary/5 transition !after:text-sm"
@@ -1227,7 +1312,7 @@
                 aria-expanded="false"
               >
                 <span class="font-bold"
-                  >What file formats can you process?</span
+                  >What file formats can you Transcription?</span
                 >
                 <span
                   class="material-symbols-outlined text-primary/40 group-hover:text-primary transition-colors faq-icon"
@@ -1360,7 +1445,7 @@
                     <select
                       class="w-full px-5 py-4 bg-background-light border-none rounded-xl focus:ring-2 focus:ring-primary/10 transition-all text-primary appearance-none cursor-pointer"
                     >
-                      <option>Data Management</option>
+                      <option>Manual Typing</option>
                       <option>Transcription Services</option>
                       <option>B2B Lead Generation</option>
                       <option>Custom Solutions</option>
@@ -1405,7 +1490,7 @@
                 Latest Blogs
               </h2>
               <p class="text-primary/60">
-                Expert perspectives on data management, digital transformation,
+                Expert perspectives on Manual Typing, digital transformation,
                 and industry trends.
               </p>
             </div>
@@ -1581,14 +1666,17 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-pagination !bottom-0"></div>
+            
           </div>
         </div>
-        <style>
-          .blog-swiper .swiper-pagination-bullet-active {
-            background: #36373a !important;
-          }
-        </style>
+<div class="flex justify-center mt-2">
+  <a 
+    href="blog.html"
+    class="inline-flex items-center justify-center text-sm font-bold text-white bg-black px-8 py-3 rounded-xl hover:bg-primary transition"
+  >
+    Show all blog
+  </a>
+</div>
       </section>
       <!-- Footer (BG upgraded) -->
       <footer
@@ -1616,7 +1704,7 @@
                 </a>
               </div>
               <p class="text-sm text-primary/60 leading-relaxed">
-                Empowering modern industries with precision data management and
+                Empowering modern industries with precision Manual Typing and
                 high-fidelity document transformation services.
               </p>
               <div class="flex gap-3 mt-6">
@@ -1657,21 +1745,25 @@
                   <a
                     class="hover:text-ink transition-colors"
                     href="#how-it-works"
-                    >Process</a
+                    >Transcription</a
                   >
                 </li>
                 <li>
-                  <a class="hover:text-ink transition-colors" href="privacy-policy.html"
+                  <a
+                    class="hover:text-ink transition-colors"
+                    href="privacy-policy.html"
                     >Privacy Policy</a
                   >
                 </li>
                 <li>
-                  <a class="hover:text-ink transition-colors" href="refund-policy.html"
+                  <a
+                    class="hover:text-ink transition-colors"
+                    href="refund-policy.html"
                     >Refund Policy</a
                   >
                 </li>
                 <li>
-                  <a class="hover:text-ink transition-colors" href="#blog"
+                  <a class="hover:text-ink transition-colors" href="blog.html"
                     >Blog</a
                   >
                 </li>
@@ -1682,23 +1774,52 @@
               <h4 class="font-bold mb-6 text-ink">Services</h4>
               <ul class="space-y-4 text-sm text-primary/80">
                 <li>
-                  <a class="hover:text-ink transition-colors" href="#"
-                    >Data Management</a
+                  <a
+                    class="hover:text-ink transition-colors"
+                    href="#services"
+                    >Manual Typing</a
                   >
                 </li>
                 <li>
-                  <a class="hover:text-ink transition-colors" href="#"
+                  <a
+                    class="hover:text-ink transition-colors"
+                    href="#services"
+                    >File Conversion</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-ink transition-colors"
+                    href="#services"
+                    >Data Entry</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-ink transition-colors"
+                    href="#how-it-works"
                     >Transcription</a
                   >
                 </li>
                 <li>
-                  <a class="hover:text-ink transition-colors" href="#"
-                    >B2B Leads</a
+                  <a
+                    class="hover:text-ink transition-colors"
+                    href="#faq"
+                    >Translation</a
+                  >
+                  </li>
+                  <li>
+                  <a
+                    class="hover:text-ink transition-colors"
+                    href="#faq"
+                    >Lead Generation</a
                   >
                 </li>
                 <li>
-                  <a class="hover:text-ink transition-colors" href="#"
-                    >Translation</a
+                  <a
+                    class="hover:text-ink transition-colors"
+                    href="#faq"
+                    >Email Marketing</a
                   >
                 </li>
               </ul>

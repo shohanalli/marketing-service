@@ -1,0 +1,747 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>INFIXX | Professional Data Services</title>
+    <meta
+      content="High-end digital services tailored for industry leaders. Streamline your workflow with our expert document and data solutions."
+      name="description"
+    />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/global.js"></script>
+  </head>
+
+  <body class="bg-background-light text-primary font-display antialiased">
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 h-full border-b border-line glass-effect">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <!-- Logo (Responsive) -->
+          <a href="#" class="flex items-center shrink-0">
+            <img
+              src="image/logo.png"
+              alt="INFIXX Logo"
+              class="h-8 sm:h-10 md:h-12 lg:h-14 w-auto max-w-[160px] sm:max-w-[200px] object-contain"
+            />
+          </a>
+
+          <!-- Navigation (Desktop) -->
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              class="text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+              href="index.html"
+              >Home</a
+            >
+            <div class="relative group">
+              <button
+                class="flex items-center gap-1 text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+                type="button"
+              >
+                Services
+                <span class="material-symbols-outlined text-sm"
+                  >expand_more</span
+                >
+              </button>
+              <!-- Dropdown -->
+              <div
+                class="absolute top-full left-0 w-64 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
+              >
+                <div
+                  class="bg-white border border-line rounded-2xl shadow-soft p-3 grid gap-1"
+                >
+                  <a
+                    class="p-2.5 hover:bg-primary/5 rounded-xl text-sm font-medium"
+                    href="index.html#services"
+                    >Data Management</a
+                  >
+                  <a
+                    class="p-2.5 hover:bg-primary/5 rounded-xl text-sm font-medium"
+                    href="index.html#services"
+                    >Digital Marketing</a
+                  >
+                  <a
+                    class="p-2.5 hover:bg-primary/5 rounded-xl text-sm font-medium"
+                    href="index.html#services"
+                    >Creative Solutions</a
+                  >
+                </div>
+              </div>
+            </div>
+            <a
+              class="text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+              href="index.html#how-it-works"
+              >Process</a
+            >
+            <a
+              class="text-sm font-semibold text-ink/90 hover:text-ink transition-colors"
+              href="index.html#faq"
+              >FAQ</a
+            >
+          </nav>
+
+          <!-- CTA + Mobile Menu Button -->
+          <div class="flex items-center gap-3">
+            <a
+              href="index.html#contact"
+              class="hidden md:flex items-center justify-center rounded-xl h-10 px-5 bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-all shadow-soft"
+            >
+              Contact Us
+            </a>
+
+            <button
+              id="mobileMenuBtn"
+              class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-line bg-white hover:bg-primary/5 transition"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobileMenuPanel"
+            >
+              <span class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+
+        <div
+          id="mobileMenuPanel"
+          class="menu-panel hidden md:hidden pb-5"
+          role="dialog"
+          aria-label="Mobile Menu"
+        >
+          <div class="bg-white border border-line rounded-2xl shadow-soft p-3">
+            <div class="flex items-center justify-between px-1 pb-2">
+              <span class="text-sm font-bold text-ink/80">Menu</span>
+
+              <button
+                type="button"
+                class="inline-flex items-center justify-center w-10 h-10 rounded-xl border border-line hover:bg-primary/5 transition"
+                aria-label="Close menu"
+                data-menu-close
+              >
+                <span class="material-symbols-outlined text-2xl">close</span>
+              </button>
+            </div>
+
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html"
+              >Home</a
+            >
+
+            <div
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+            >
+              Services
+            </div>
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#services"
+              >Data Management</a
+            >
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#services"
+              >Digital Marketing</a
+            >
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#services"
+              >Creative Solutions</a
+            >
+
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#how-it-works"
+              >Process</a
+            >
+            <a
+              class="block px-3 py-3 rounded-xl text-sm font-semibold hover:bg-primary/5"
+              href="index.html#faq"
+              >FAQ</a
+            >
+
+            <div class="pt-2">
+              <a
+                href="index.html#contact"
+                class="w-full h-11 rounded-xl bg-primary text-white font-bold text-sm hover:bg-primary/90 transition shadow-soft"
+              >
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-6 lg:px-20 py-12">
+      <!-- Hero Section -->
+
+      <!-- Featured Post -->
+      <section class="mb-20">
+        <h2 class="text-2xl font-bold mb-8 flex items-center gap-2">
+          <span class="w-8 h-1 bg-primary rounded-full"></span>
+          Our Blog
+        </h2>
+        <div
+          class="group relative flex flex-col lg:flex-row gap-8 bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 dark:border-slate-800"
+        >
+          <div class="lg:w-3/5 overflow-hidden">
+            <div
+              class="h-[300px] lg:h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+              data-alt="Abstract futuristic AI neural network visualization"
+              style="
+                background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBH-_t36YkRlPaYXP_Ik0-xRz2UEq886s0D0j_ViSgoL22jK5_A35yQE4t2E849KDmk1MhGtNUywHgDI4rh47u_koH70U1wbdeZ3mOQCxDognRQZ7n1_EjQ8LNj0n3AeDmBjPW9OIhhM5C0ytcu459r3RFDkToiN5M91LL9BRYsF-2Thxb3fFD4G7Y4hAMW0KsozVj2r1ocd_vfvYxZSf3CSXI7jyjZQcMa56ZTnujeCy5XWjKZS9iHaarU-zzmtR3V70w62wdWuhLb&quot;);
+              "
+            ></div>
+          </div>
+          <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
+            <span
+              class="text-primary font-bold text-xs uppercase tracking-widest mb-4 inline-block px-2 py-1 bg-primary/10 rounded"
+              >Strategy</span
+            >
+            <h3
+              class="text-3xl font-bold mb-4 group-hover:text-primary transition-colors"
+            >
+              The Future of Generative AI in Enterprise Data Architecture
+            </h3>
+            <p
+              class="text-slate-600 dark:text-slate-400 text-lg mb-8 leading-relaxed"
+            >
+              Discover how leading firms are integrating Large Language Models
+              into their core architecture to drive unprecedented efficiency and
+              actionable insights.
+            </p>
+            <div class="flex items-center gap-4 mb-8">
+              <div
+                class="w-10 h-10 rounded-full bg-slate-200"
+                data-alt="Portrait of editorial director"
+                style="
+                  background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDRc29IjRbNEfsPBDqOZa4Yb0zCf26cxfp6oMpYNk3nLfbWb_uEDNOHvmsZnnVBwDhhqtHpzKt_McMxJiytJMq65siPHatMA6-i5RxZgXkney0B0SglOxsIJ-UqqPp9cafTeFl1bsNNqs3sIGJMj4cYUwVNLbPZ1Piph4EoGBVwwyQj4iltDIZKjXFDJlvk1Fcc1e_GZem-uzIINJUSUUxZn4LiWdRhh9XLzBrIIwg-B9V_ymtus5C24aorALxTa5ZIBGyMtLVDHBQA&quot;);
+                "
+              ></div>
+              <div>
+                <p class="text-sm font-bold">By Marcus Thorne</p>
+                <p class="text-xs text-slate-500">
+                  Editorial Director • 8 min read
+                </p>
+              </div>
+            </div>
+            <button
+              class="inline-flex items-center gap-2 text-primary dark:text-slate-100 font-bold hover:gap-3 transition-all"
+            >
+              Read the Full Story
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Filter Bar -->
+      <div
+        class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12 border-b border-slate-200 dark:border-slate-800 pb-6"
+      >
+        <div class="flex flex-wrap gap-2">
+          <button
+            class="px-5 py-2 rounded-full bg-primary text-white text-sm font-medium"
+          >
+            All
+          </button>
+          <button
+            class="px-5 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm font-medium hover:bg-slate-200 transition-colors"
+          >
+            Data Strategy
+          </button>
+          <button
+            class="px-5 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm font-medium hover:bg-slate-200 transition-colors"
+          >
+            UX Design
+          </button>
+          <button
+            class="px-5 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm font-medium hover:bg-slate-200 transition-colors"
+          >
+            Technology
+          </button>
+          <button
+            class="px-5 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm font-medium hover:bg-slate-200 transition-colors"
+          >
+            Innovation
+          </button>
+        </div>
+        <div class="flex items-center gap-2 text-slate-500 text-sm">
+          <span>Sort by:</span>
+          <select
+            class="bg-transparent border-none focus:ring-0 font-bold text-slate-900 dark:text-slate-100 cursor-pointer"
+          >
+            <option>Newest First</option>
+            <option>Most Popular</option>
+            <option>Oldest</option>
+          </select>
+        </div>
+      </div>
+      <!-- Post Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <!-- Card 1 -->
+        <article
+          class="group bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-800 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+        >
+          <div
+            class="h-56 bg-cover bg-center"
+            data-alt="Dashboard showing complex data visualizations"
+            style="
+              background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCdnu9dhNVH7FcTn0p35fMRtjYP6xQ6CmEiZDQbK08Zir9jp2RQK30t20ffTN9LgT3-ffTKPmpJ5Wv7SEszINCcL_er2b9p5iXt9xv4SwwTc2ooLrdyb2jzeemgKrgZtbyZsl8onrdE9OYQ7WfTb1iq0veAsbsQlf3g_U5wLqGt6hDnfnse25OyovjAmfofPcVVlCOrJ6-DKNJQUP6J9N3ttCpHsF729jG0uhyvXj_KHZec6XaFkYxViI70OQmWYC0DmOfYEMOigs6n&quot;);
+            "
+          ></div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <span
+                class="text-[10px] font-bold uppercase tracking-widest text-primary px-2 py-1 bg-primary/5 rounded"
+                >Data Strategy</span
+              >
+              <span class="text-xs text-slate-400">Oct 24, 2023</span>
+            </div>
+            <h4
+              class="text-xl font-bold mb-3 group-hover:text-primary transition-colors"
+            >
+              Mastering Data Observability
+            </h4>
+            <p
+              class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 line-clamp-3"
+            >
+              How to maintain high data quality across distributed systems
+              without sacrificing development speed or architectural integrity.
+            </p>
+            <a
+              class="inline-flex items-center gap-1 text-sm font-bold text-primary group-hover:gap-2 transition-all"
+              href="#"
+            >
+              Read More
+              <span class="material-symbols-outlined text-[18px]"
+                >chevron_right</span
+              >
+            </a>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article
+          class="group bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-800 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+        >
+          <div
+            class="h-56 bg-cover bg-center"
+            data-alt="Clean desk with prototype sketches"
+            style="
+              background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCrjaZ_9kh11Su0QM0BKj6vkZia3PKEwgdulheOu7DIy-5m1jZ1thgJ4VGh8W5gRxu2N0ZFk6OhRSymJp2rQWZekJHPd3DJ5Xi6JAfsuuZxX35GuzplzvInDhx5AoGRwT1YPQKwz7uvoeb7Aecfy_2IShI-O5b4GS6tmC6FL4H3kfJeP76KCIrVikdysWhis4lKVNt-qg7PmGGep-KVDzAC4EA5GwCeJwhmCe0hsTMS2ISRewF-voQec9vTuuFVZ0nun182K5j5Y0qz&quot;);
+            "
+          ></div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <span
+                class="text-[10px] font-bold uppercase tracking-widest text-primary px-2 py-1 bg-primary/5 rounded"
+                >UX Design</span
+              >
+              <span class="text-xs text-slate-400">Oct 21, 2023</span>
+            </div>
+            <h4
+              class="text-xl font-bold mb-3 group-hover:text-primary transition-colors"
+            >
+              Emotional Intelligence in UX
+            </h4>
+            <p
+              class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 line-clamp-3"
+            >
+              Designing for the user's emotional state can transform a
+              functional interface into a memorable brand experience.
+            </p>
+            <a
+              class="inline-flex items-center gap-1 text-sm font-bold text-primary group-hover:gap-2 transition-all"
+              href="#"
+            >
+              Read More
+              <span class="material-symbols-outlined text-[18px]"
+                >chevron_right</span
+              >
+            </a>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article
+          class="group bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-800 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+        >
+          <div
+            class="h-56 bg-cover bg-center"
+            data-alt="Abstract blue space and technology theme"
+            style="
+              background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuA7blqJ2htVma4TRq6aWZp96BAAUQRF6zbvr6htS3n0JeMciBRyiUXEa725RGhhUlhtq7EpnFx1pkpol9x2H90-h82TjExrEMRrHHKA6Ir9FnM-SWTxj5X5ZcaDbbk1EbPScYE5ueo0BgiETC6Bjzh8i1Y--uiXLt9-6MrqPvbE4fbCZs0Ky_C0ghfN6oF5n0eqmjT9JPuLi_8qNO-dlppPHhJk1siuFGO-jRwrIZ9t8lORXjGoVP56Eqe937gfsTbphgtxcdSyrm4Y&quot;);
+            "
+          ></div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <span
+                class="text-[10px] font-bold uppercase tracking-widest text-primary px-2 py-1 bg-primary/5 rounded"
+                >Technology</span
+              >
+              <span class="text-xs text-slate-400">Oct 18, 2023</span>
+            </div>
+            <h4
+              class="text-xl font-bold mb-3 group-hover:text-primary transition-colors"
+            >
+              The Edge Computing Revolution
+            </h4>
+            <p
+              class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 line-clamp-3"
+            >
+              Decentralizing processing power is reducing latency and unlocking
+              new possibilities for IoT and real-time analytics.
+            </p>
+            <a
+              class="inline-flex items-center gap-1 text-sm font-bold text-primary group-hover:gap-2 transition-all"
+              href="#"
+            >
+              Read More
+              <span class="material-symbols-outlined text-[18px]"
+                >chevron_right</span
+              >
+            </a>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article
+          class="group bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-800 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+        >
+          <div
+            class="h-56 bg-cover bg-center"
+            data-alt="Modern office meeting room with natural light"
+            style="
+              background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDD9DcFcKp-BCBpQsFN0BRX2INtAvg53lGr2rWbRlxKKg1zeE7uRvA_zEF6R74t2q6C3fyOq8Dlkfw9QBGAzQo3byO_Gy2CIv9yf91HGyz8sGuezTXGjK-qJgra_XYL1zBY2L9RESFo_9r2dgqcidO9oEeYC5hmnfHmoHAOcRVmMbs7VaokqS-BApsmc5l_wye-Jxh2y6OR6KeEyJpqSW7MPWsasiP4KOow3RYKQ85FkUcVpk0Zf-90G8Fz4dzWahV8JqYafU3K4FqJ&quot;);
+            "
+          ></div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <span
+                class="text-[10px] font-bold uppercase tracking-widest text-primary px-2 py-1 bg-primary/5 rounded"
+                >Innovation</span
+              >
+              <span class="text-xs text-slate-400">Oct 15, 2023</span>
+            </div>
+            <h4
+              class="text-xl font-bold mb-3 group-hover:text-primary transition-colors"
+            >
+              Building a Culture of Iteration
+            </h4>
+            <p
+              class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 line-clamp-3"
+            >
+              Why the fastest path to perfection is often paved with
+              intentional, well-documented failure and rapid pivots.
+            </p>
+            <a
+              class="inline-flex items-center gap-1 text-sm font-bold text-primary group-hover:gap-2 transition-all"
+              href="#"
+            >
+              Read More
+              <span class="material-symbols-outlined text-[18px]"
+                >chevron_right</span
+              >
+            </a>
+          </div>
+        </article>
+        <!-- Card 5 -->
+        <article
+          class="group bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-800 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+        >
+          <div
+            class="h-56 bg-cover bg-center"
+            data-alt="Close up of circuit board components"
+            style="
+              background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuB_zj-JjSodzkZ994XGh1RiLY3_Cl4UTr1vF9_4EomgZdyJwqGnlYZsfZ-G0pLoBBghSrBWUs16OXVc4epBF02jKMacv7WGzIEBmZX4SikfQnU6z1-qfqiMgvmxDVGR4SC9pYxANwGaXvn0k0RmZlVbPS02TyXR6PByEGeE5IxioDzF6KN-Jpys4U2ng_ZSYQbIKqv6B8imtCMoguhIl4MxauBp_hweWHDGRGn3vGLgXLCGZX5tT2dYg6xPpJkWUboUWRWuUtETR7DZ&quot;);
+            "
+          ></div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <span
+                class="text-[10px] font-bold uppercase tracking-widest text-primary px-2 py-1 bg-primary/5 rounded"
+                >Technology</span
+              >
+              <span class="text-xs text-slate-400">Oct 12, 2023</span>
+            </div>
+            <h4
+              class="text-xl font-bold mb-3 group-hover:text-primary transition-colors"
+            >
+              Post-Quantum Cryptography
+            </h4>
+            <p
+              class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 line-clamp-3"
+            >
+              Preparing enterprise security frameworks for the era of quantum
+              computing before it arrives.
+            </p>
+            <a
+              class="inline-flex items-center gap-1 text-sm font-bold text-primary group-hover:gap-2 transition-all"
+              href="#"
+            >
+              Read More
+              <span class="material-symbols-outlined text-[18px]"
+                >chevron_right</span
+              >
+            </a>
+          </div>
+        </article>
+        <!-- Card 6 -->
+        <article
+          class="group bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-800 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+        >
+          <div
+            class="h-56 bg-cover bg-center"
+            data-alt="Analytic charts on a laptop screen"
+            style="
+              background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAi1kJrYGo4BdZF_Ry_9uNuGRGrzhpV-mED9y9wVuGXbnQMYwPkOuRCc1VfvDmbd_h90rbZfI6DQDo2IQo1dz_sApYMrdjPGJEOyKADGue9ixamqCHoTj_WKhHGZaLHsu8Gh1CosrKR-sGubJvqDAouQCuZcXuq9FuqhHu_uicQ55U42QkbTNLYSupiEQRv_zAru7BDGpMvHegqgYGJwEsKY0l_0RJ4pKZVabqI0kgHiSm6nRbJpGOuOIB-z8X3jpd9td4njriRK4wP&quot;);
+            "
+          ></div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <span
+                class="text-[10px] font-bold uppercase tracking-widest text-primary px-2 py-1 bg-primary/5 rounded"
+                >Data Strategy</span
+              >
+              <span class="text-xs text-slate-400">Oct 10, 2023</span>
+            </div>
+            <h4
+              class="text-xl font-bold mb-3 group-hover:text-primary transition-colors"
+            >
+              The ROI of Data Mesh
+            </h4>
+            <p
+              class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 line-clamp-3"
+            >
+              Evaluating the business case for transitioning from centralized
+              data lakes to a distributed data mesh model.
+            </p>
+            <a
+              class="inline-flex items-center gap-1 text-sm font-bold text-primary group-hover:gap-2 transition-all"
+              href="#"
+            >
+              Read More
+              <span class="material-symbols-outlined text-[18px]"
+                >chevron_right</span
+              >
+            </a>
+          </div>
+        </article>
+      </div>
+      <!-- Pagination -->
+      <div class="flex items-center justify-center gap-2 pb-20">
+        <button
+          class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-slate-400 hover:text-primary hover:border-primary transition-all"
+        >
+          <span class="material-symbols-outlined">chevron_left</span>
+        </button>
+        <button
+          class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white font-bold text-sm"
+        >
+          1
+        </button>
+        <button
+          class="w-10 h-10 flex items-center justify-center rounded-lg border border-transparent hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 font-bold text-sm transition-all"
+        >
+          2
+        </button>
+        <button
+          class="w-10 h-10 flex items-center justify-center rounded-lg border border-transparent hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 font-bold text-sm transition-all"
+        >
+          3
+        </button>
+        <span class="px-2 text-slate-400">...</span>
+        <button
+          class="w-10 h-10 flex items-center justify-center rounded-lg border border-transparent hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 font-bold text-sm transition-all"
+        >
+          12
+        </button>
+        <button
+          class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-slate-400 hover:text-primary hover:border-primary transition-all"
+        >
+          <span class="material-symbols-outlined">chevron_right</span>
+        </button>
+      </div>
+    </main>
+
+    <!-- Footer (BG upgraded) -->
+    <footer
+      class="pt-20 pb-10 border-t border-primary/5 relative overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-primary/5 to-primary/0"
+      ></div>
+      <div
+        class="absolute -top-24 -right-24 w-[26rem] h-[26rem] rounded-full bg-primary/10 blur-3xl"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16"
+        >
+          <div class="col-span-1 lg:col-span-1">
+            <div class="flex items-center gap-2 mb-6">
+              <a href="#" class="flex items-center shrink-0">
+                <img
+                  src="image/logo.png"
+                  alt="INFIXX Logo"
+                  class="h-6 md:h-8 lg:h-10 w-auto max-w-[160px] sm:max-w-[200px] object-contain"
+                />
+              </a>
+            </div>
+            <p class="text-sm text-primary/60 leading-relaxed">
+              Empowering modern industries with precision data management and
+              high-fidelity document transformation services.
+            </p>
+            <div class="flex gap-3 mt-6">
+              <a
+                class="size-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-black/20 transition-colors"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-lg">public</span>
+              </a>
+              <a
+                class="size-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-black/20 transition-colors"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-lg">thumb_up</span>
+              </a>
+              <a
+                class="size-10 rounded-full bg-black/5 flex items-center justify-center hover:bg-black/20 transition-colors"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-lg"
+                  >smart_display</span
+                >
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-6 text-ink">Quick Links</h4>
+            <ul class="space-y-4 text-sm text-primary/70">
+              <li>
+                <a
+                  class="hover:text-ink transition-colors"
+                  href="index.html#services"
+                  >Our Services</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-ink transition-colors"
+                  href="index.html#how-it-works"
+                  >Process</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-ink transition-colors"
+                  href="privacy-policy.html"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-ink transition-colors"
+                  href="refund-policy.html"
+                  >Refund Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-ink transition-colors"
+                  href="index.html#blog"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-6 text-ink">Services</h4>
+            <ul class="space-y-4 text-sm text-primary/80">
+              <li>
+                <a class="hover:text-ink transition-colors" href="#"
+                  >Data Management</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-ink transition-colors" href="#"
+                  >Transcription</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-ink transition-colors" href="#"
+                  >B2B Leads</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-ink transition-colors" href="#"
+                  >Translation</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-6 text-ink">Contact</h4>
+            <ul class="space-y-4 text-sm text-primary/90">
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-symbols-outlined text-primary/40 text-sm mt-1"
+                  >location_on</span
+                >
+                1201 Digital Plaza, Suite 400<br />San Francisco, CA 94103
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary/40 text-sm"
+                  >mail</span
+                >
+                hello@infixx.services
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary/40 text-sm"
+                  >phone</span
+                >
+                +1 (800) 555-DATA
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-primary/10 pt-10 flex flex-col justify-between items-center gap-6"
+        >
+          <p
+            class="text-xs text-primary/50 uppercase tracking-widest font-medium"
+          >
+            © 2026 INFIXX Services. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
